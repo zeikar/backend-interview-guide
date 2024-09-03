@@ -1,4 +1,4 @@
-# 데이터베이스 스케일링: 수직 스케일링(Vertical Scaling)과 수평 스케일링(Horizontal Scaling)
+# 수직 스케일링(Vertical Scaling)과 수평 스케일링(Horizontal Scaling)
 
 ## 차이점
 
