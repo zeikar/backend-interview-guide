@@ -10,4 +10,5 @@
 2. [데이터베이스 최적화](optimization.md)
 3. [트랜잭션 처리 및 일관성](transaction.md)
 4. [캐싱](caching.md)
+   - [Redis](redis.md)
 5. [NoSQL 데이터베이스](nosql.md)
