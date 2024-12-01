@@ -6,6 +6,12 @@
 - [쿠버네티스의 주요 구성 요소](#쿠버네티스의-주요-구성-요소)
 - [쿠버네티스의 장점](#쿠버네티스의-장점)
 - [쿠버네티스의 단점](#쿠버네티스의-단점)
+- [쿠버네티스 사용 시 주의할 점](#쿠버네티스-사용-시-주의할-점)
+- [쿠버네티스 배포](#쿠버네티스-배포)
+  - [무중단 배포란?](#무중단-배포란)
+  - [배포 전략](#배포-전략)
+  - [무중단 배포를 위한 파드 세팅](#무중단-배포를-위한-파드-세팅)
+  - [무중단 배포 시 주의 사항](#무중단-배포-시-주의-사항)
 
 ---
 
@@ -155,6 +161,222 @@
 ### 4. **리소스 소비**
 
 - 쿠버네티스 자체가 노드와 클러스터 리소스를 소비하기 때문에, 소규모 애플리케이션에서는 과도한 인프라 자원이 필요할 수 있습니다.
+
+---
+
+## 쿠버네티스 사용 시 주의할 점
+
+쿠버네티스를 효과적으로 사용하려면, 몇 가지 운영 및 관리 측면에서 주의가 필요합니다. 아래는 주요 고려 사항입니다:
+
+### 1. **리소스 요청 및 제한 설정**
+
+- 모든 파드(Pod)에 대해 CPU 및 메모리 **리소스 요청(request)**과 **제한(limit)**을 설정해야 클러스터 자원 남용을 방지할 수 있습니다.
+- 리소스 설정이 없을 경우, 특정 파드가 클러스터의 자원을 과도하게 사용하여 다른 서비스에 영향을 줄 수 있습니다.
+
+  ```yaml
+  resources:
+    requests:
+      memory: "128Mi"
+      cpu: "250m"
+    limits:
+      memory: "256Mi"
+      cpu: "500m"
+  ```
+
+### 2. **보안 설정**
+
+- 네임스페이스(Namespace) 기반 격리를 통해 서비스 간 충돌 및 자원 경쟁을 방지.
+- **RBAC(Role-Based Access Control)**을 설정하여 클러스터에 대한 접근 권한을 엄격히 제어.
+- 모든 통신에 대해 TLS를 활성화하고, **시크릿(Secret)**을 사용하여 민감한 데이터를 안전하게 저장합니다.
+
+---
+
+## 쿠버네티스 배포
+
+### 무중단 배포란?
+
+**무중단 배포(Zero Downtime Deployment)**는 애플리케이션 배포 시 서비스의 가용성을 유지하면서 업데이트를 수행하는 방식을 의미합니다. 사용자는 배포 중에도 애플리케이션을 계속 사용할 수 있으며, 다운타임이나 서비스 중단 없이 새로운 버전으로 전환됩니다.
+
+무중단 배포는 다음과 같은 상황에서 필수적입니다:
+
+- 대규모 트래픽이 있는 서비스에서 서비스 중단이 불가한 경우.
+- 빠른 롤백 및 문제 해결이 필요한 경우.
+- 사용자 경험을 우선시하는 애플리케이션 환경.
+
+---
+
+### 배포 전략
+
+#### 롤링 업데이트 (Rolling Update)
+
+기존 인스턴스를 하나씩 교체하여 점진적으로 새로운 버전으로 대체하는 방식입니다.
+
+```yaml
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxUnavailable: 1
+    maxSurge: 1
+```
+
+- **`maxUnavailable`**: 배포 중 사용할 수 없는 최대 파드 수.
+- **`maxSurge`**: 배포 중 추가로 생성 가능한 최대 파드 수.
+
+---
+
+#### 블루-그린 배포 (Blue-Green Deployment)
+
+새로운 버전(Green)을 준비한 뒤, 기존 버전(Blue)에서 새로운 버전으로 트래픽을 전환합니다.
+
+1. 기존 서비스(Blue)와 새로운 서비스(Green)를 병렬로 실행.
+2. 트래픽을 새로운 버전으로 전환.
+3. 문제가 없으면 Blue를 삭제하거나 대기 상태로 유지.
+
+장점:
+
+- 즉각적인 롤백 가능.
+- 업데이트 안전성이 높음.
+
+---
+
+#### 카나리 배포 (Canary Deployment)
+
+새 버전을 전체 트래픽의 일부에만 노출하고, 점진적으로 확장하여 전환하는 방식입니다.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: canary-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+        version: canary
+```
+
+- **소규모 테스트** 후, 점차적인 확장을 통해 안정성 검증.
+
+---
+
+#### A/B 테스트
+
+사용자를 그룹으로 나누어 새 버전(A)과 기존 버전(B)을 동시에 제공하는 방식입니다. 성능과 사용자 피드백을 기반으로 새로운 버전의 확장 여부를 결정합니다.
+
+---
+
+### 무중단 배포를 위한 파드 세팅
+
+#### Liveness와 Readiness Probe
+
+- **Liveness Probe**: 파드가 정상적으로 작동 중인지 확인.
+- **Readiness Probe**: 파드가 트래픽을 받을 준비가 되었는지 확인.
+
+```yaml
+livenessProbe:
+  httpGet:
+    path: /
+    port: 80
+  initialDelaySeconds: 5
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 80
+  initialDelaySeconds: 5
+  periodSeconds: 10
+```
+
+---
+
+#### PreStop Hook
+
+파드 종료 전에 작업을 수행하여 연결을 안전하게 종료하거나 요청 처리를 마무리.
+
+```yaml
+lifecycle:
+  preStop:
+    exec:
+      command: ["sh", "-c", "sleep 5"]
+```
+
+---
+
+#### Graceful Shutdown
+
+파드 종료 시, 애플리케이션이 요청을 안전하게 처리할 시간을 확보.
+
+```yaml
+spec:
+  terminationGracePeriodSeconds: 60
+```
+
+---
+
+#### Auto-scaling
+
+트래픽 증가에 따라 파드를 자동으로 확장하여 무중단 배포를 지원.
+
+```yaml
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: example-deployment
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+```
+
+---
+
+#### Pod Anti-Affinity
+
+여러 파드를 동일한 노드에 배치하지 않도록 설정하여 장애 영향을 분산.
+
+```yaml
+affinity:
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+            - key: app
+              operator: In
+              values:
+                - example
+        topologyKey: "kubernetes.io/hostname"
+```
+
+---
+
+### 무중단 배포 시 주의 사항
+
+1. **헬스 체크 설정**:
+
+   - Liveness와 Readiness Probe를 정확히 설정하여 비정상적인 파드에 트래픽이 전달되지 않도록 방지.
+
+2. **배포 속도 제어**:
+
+   - 롤링 업데이트나 카나리 배포에서 배포 속도를 조정하여 트래픽 과부하 방지.
+
+3. **로깅 및 모니터링**:
+
+   - Prometheus, Grafana와 같은 도구를 사용하여 배포 중 발생하는 문제를 실시간으로 추적.
+
+4. **테스트 환경 구축**:
+
+   - 블루-그린 또는 카나리 배포 전, 새로운 버전을 충분히 테스트하여 안정성을 검증.
+
+5. **네트워크 안정성 유지**:
+   - 로드 밸런서와 네트워크 설정을 통해 서비스 간 통신을 안정적으로 유지.
 
 ---
 
