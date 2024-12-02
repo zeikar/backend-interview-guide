@@ -18,3 +18,5 @@
 ## 참고하면 좋은 자료
 
 [system-design-primer](https://github.com/donnemartin/system-design-primer)
+
+[leetcode](https://leetcode.com/)
