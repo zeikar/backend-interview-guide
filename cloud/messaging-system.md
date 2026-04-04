@@ -7,14 +7,12 @@
 - [메시징 시스템의 구성 요소](#메시징-시스템의-구성-요소)
 - [메시징 시스템의 주요 패턴](#메시징-시스템의-주요-패턴)
 - [Kafka와 RabbitMQ](#kafka와-rabbitmq)
-
   - [Apache Kafka란?](#apache-kafka란)
   - [RabbitMQ란?](#rabbitmq란)
   - [Kafka와 RabbitMQ의 비교](#kafka와-rabbitmq의-비교)
   - [Kafka와 RabbitMQ의 주요 사용 사례](#kafka와-rabbitmq의-주요-사용-사례)
   - [Kafka와 RabbitMQ의 선택 기준](#kafka와-rabbitmq의-선택-기준)
   - [결론](#결론)
-
 - [메시징 시스템의 장점](#메시징-시스템의-장점)
 - [메시징 시스템 구현 시 고려사항](#메시징-시스템-구현-시-고려사항)
 
