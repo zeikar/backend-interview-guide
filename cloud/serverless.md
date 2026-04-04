@@ -1,4 +1,4 @@
-# 서버리스(Serverless)
+# 서버리스 (Serverless)
 
 ## 목차
 

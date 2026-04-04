@@ -1,4 +1,4 @@
-# 자바스크립트(JavaScript)
+# 자바스크립트 (JavaScript)
 
 ## 목차
 

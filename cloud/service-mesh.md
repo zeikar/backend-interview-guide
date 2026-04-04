@@ -1,4 +1,4 @@
-# 서비스 메시(Service Mesh)
+# 서비스 메시 (Service Mesh)
 
 ## 목차
 

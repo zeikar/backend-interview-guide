@@ -5,8 +5,8 @@
 - [로깅과 모니터링의 중요성](#로깅과-모니터링의-중요성)
 - [MSA 환경에서 로깅의 특징](#msa-환경에서-로깅의-특징)
 - [MSA 환경에서 모니터링의 특징](#msa-환경에서-모니터링의-특징)
-- [분산 로깅(Distributed Logging)](#분산-로깅distributed-logging)
-- [분산 모니터링(Distributed Monitoring)](#분산-모니터링distributed-monitoring)
+- [분산 로깅(Distributed Logging)](#분산-로깅-distributed-logging)
+- [분산 모니터링(Distributed Monitoring)](#분산-모니터링-distributed-monitoring)
 - [주요 도구 및 기술 스택](#주요-도구-및-기술-스택)
 - [MSA 로깅 및 모니터링 도입 시 주의사항](#msa-로깅-및-모니터링-도입-시-주의사항)
 

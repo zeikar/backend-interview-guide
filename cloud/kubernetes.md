@@ -1,4 +1,4 @@
-# 쿠버네티스(Kubernetes)
+# 쿠버네티스 (Kubernetes)
 
 ## 목차
 
