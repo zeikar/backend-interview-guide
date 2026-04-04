@@ -8,7 +8,7 @@
 
 - [클라우드 컴퓨팅 (Cloud Computing)](cloud-computing.md)
 - [컨테이너 (Container)](container.md)
-- [쿠버네티스 (Kubernetes)](kubernetes.md)
+- [Kubernetes](kubernetes.md)
 - [서버리스 (Serverless)](serverless.md)
 - [마이크로서비스 아키텍처 (MSA)](microservices.md)
   - [메시징 시스템 (Messaging System)](messaging-system.md)
