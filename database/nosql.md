@@ -70,8 +70,8 @@ NoSQL 데이터베이스는 RDBMS와 여러 가지 측면에서 차이점이 있
 
 ### ACID vs. BASE
 
-- **RDBMS:** ACID(Atomicity, Consistency, Isolation, Durability) 원칙을 따르며, 트랜잭션의 일관성과 무결성을 보장합니다.
-- **NoSQL:** BASE(Basically Available, Soft state, Eventual consistency) 원칙을 따릅니다. 즉, 즉각적인 일관성보다는 가용성과 확장성에 중점을 두며, 일정 시간이 지난 후 데이터가 최종적으로 일관성을 갖는 방식(eventual consistency)을 지원합니다.
+- **RDBMS:** 일반적으로 ACID 트랜잭션을 강하게 지원합니다.
+- **NoSQL:** 제품에 따라 일관성 모델과 트랜잭션 지원 범위가 다릅니다. 일부는 BASE 성향과 eventual consistency를 중심으로 설계되고, 일부는 강한 일관성 옵션이나 트랜잭션도 제공합니다.[^dynamodb-consistency]
 
 ### 사용 사례
 
@@ -116,10 +116,9 @@ CAP 이론은 분산 시스템에서 Consistency(일관성), Availability(가용
 
 ### CAP 이론의 적용
 
-- **CP 시스템:** 일관성과 파티션 허용성을 보장하지만, 네트워크 분할 시 일부 요청에 대한 응답이 지연될 수 있습니다. 예: HBase, MongoDB.
-- **AP 시스템:** 가용성과 파티션 허용성을 보장하지만, 네트워크 분할 시 데이터 일관성이 보장되지 않을 수 있습니다. 예: Cassandra, DynamoDB.
-
-NoSQL 시스템은 대체로 가용성과 파티션 허용성(AP)을 우선시하는 경향이 있습니다. 즉, 네트워크 분할 시에도 시스템이 계속 작동하지만, 일관성은 시간이 지나면서 최종적으로 보장됩니다(이벤트 추정적 일관성).
+- CAP 이론은 분산 시스템이 네트워크 파티션 상황에서 일관성과 가용성 중 어떤 특성을 더 우선하는지 이해하는 데 사용됩니다.
+- NoSQL 데이터베이스는 공통적으로 분산 환경을 전제로 하지만, 실제 일관성 모델은 제품마다 다릅니다. 예를 들어 DynamoDB는 eventually consistent read와 strongly consistent read를 모두 제공하고, MongoDB도 읽기/쓰기 보장 수준에 따라 동작 특성이 달라집니다.[^dynamodb-consistency][^mongodb-read-isolation]
+- 따라서 NoSQL을 설명할 때는 "제품마다 일관성 모델과 트랜잭션 지원 범위가 다르며, 워크로드에 맞는 선택이 중요하다"는 관점으로 정리하는 것이 적절합니다.
 
 ## NoSQL에서 스케일링(Scaling)
 
@@ -141,3 +140,8 @@ NoSQL은 주로 **수평적 확장(Horizontal Scaling)**을 통해 대규모 데
 
 - 데이터를 분산하여 저장하고, 클러스터 내에서 작업을 병렬로 처리하여 성능을 극대화하는 방식입니다. 클러스터 구성 시, 데이터를 여러 노드에 분산 저장하며 트래픽 분산 및 장애 복구가 용이합니다.
 - **예시:** Amazon DynamoDB는 수평적 확장을 통해 대규모 트래픽과 데이터를 처리할 수 있습니다.
+
+## 참고 자료
+
+[^dynamodb-consistency]: AWS Docs, "DynamoDB read consistency" - https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html
+[^mongodb-read-isolation]: MongoDB Docs, "Read Isolation, Consistency, and Recency" - https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/

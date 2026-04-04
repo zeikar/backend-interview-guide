@@ -180,7 +180,7 @@ fetchData();
 
 ```javascript
 const name = 'John';
-console.log(Hello, ${name});
+console.log(`Hello, ${name}`);
 ```
 
 2. **디스트럭처링**:
