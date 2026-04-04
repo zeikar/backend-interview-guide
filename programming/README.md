@@ -6,9 +6,12 @@
 
 ## 목차
 
-1. [자료구조(Data Structures)](data-structures.md)
-2. [알고리즘(Algorithms)](algorithms.md)
-3. [프로그래밍 언어(Programming Languages)](programming-languages.md)
-   1. [JavaScript](javascript.md)
-   2. [Go](go.md)
-4. [LeetCode 문제 풀이](https://zeikar.github.io/leetcode/)
+- 프로그래밍 언어
+  - [JavaScript](javascript.md)
+  - [Go](go.md)
+- [LeetCode 문제 풀이](https://zeikar.github.io/leetcode/)
+
+## 작성 예정 주제
+
+- 자료구조 (Data Structures)
+- 알고리즘 (Algorithms)
