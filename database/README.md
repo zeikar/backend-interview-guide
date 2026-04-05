@@ -14,6 +14,7 @@
 - [캐싱](caching.md)
   - [Redis](redis.md)
 - [NoSQL 데이터베이스](nosql.md)
+  - [NoSQL 데이터 모델링 (NoSQL Data Modeling)](nosql-data-modeling.md)
   - [MongoDB](mongodb.md)
 
 ## 작성 예정 주제
