@@ -31,6 +31,7 @@ description: "백엔드 면접 가이드 프로젝트의 전체 콘텐츠 워크
    - 루트 `README.md`를 읽어 카테고리 목록 파악
    - 대상 카테고리 `README.md`를 읽어 기존 문서 목록 파악
    - `Glob("{category}/*.md")`로 실제 파일 확인
+   - AGENTS.md의 `Category Boundary Rules`를 확인해 카테고리 간 관점 차이를 먼저 정리
 
 3. **Workspace 준비:**
    - `_workspace/{topic}/` 디렉토리 생성 (topic은 영문 소문자-하이픈)

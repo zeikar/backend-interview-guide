@@ -30,6 +30,15 @@ Agents and skills must not hardcode category names (`database`, `cloud`, etc.). 
 
 This ensures the harness works correctly when categories are added, renamed, or removed.
 
+## Category Boundary Rules
+
+- Do not reorganize directories only because similar keywords appear in multiple categories.
+- Keep overlapping topics when the interview angle is different, and make that angle explicit near the top of the document.
+- Treat `system-design/` as the design-decision layer: why, when, and what tradeoff to choose.
+- Treat `database/`, `cloud/`, and other domain categories as the implementation/operations layer: how to build it, what to operate, and what can go wrong.
+- When two documents touch the same keyword across categories, add cross-links so they read as a depth hierarchy rather than duplicate content.
+- Only consider merging or restructuring when the body content substantially overlaps, not just because the title or keyword is similar.
+
 ## Skill Routing
 
 - `interview-guide`: use for multi-step content work or broad repo-wide review.
