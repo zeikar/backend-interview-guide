@@ -6,6 +6,7 @@
 
 ## 목차
 
+- [데이터 모델링 (Data Modeling)](data-modeling.md)
 - [RDBMS와 SQL](sql-and-rdbms.md)
 - [데이터베이스 스케일링](scaling.md)
 - [데이터베이스 최적화](optimization.md)
@@ -17,10 +18,6 @@
 
 ## 작성 예정 주제
 
-- 데이터 모델링 (Data Modeling)
-  - 엔티티와 관계 설계
-  - PK / FK 선택 기준
-  - 인덱스와 스키마의 관계
 - PostgreSQL / MySQL
   - 각 엔진의 특징과 선택 기준
   - 복제와 장애 전환
