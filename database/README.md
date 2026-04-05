@@ -6,6 +6,7 @@
 
 ## 목차
 
+- [RDBMS와 SQL](sql-and-rdbms.md)
 - [데이터베이스 스케일링](scaling.md)
 - [데이터베이스 최적화](optimization.md)
 - [트랜잭션 처리 및 일관성](transaction.md)
@@ -16,11 +17,6 @@
 
 ## 작성 예정 주제
 
-- RDBMS와 SQL
-  - 관계형 모델의 장점과 한계
-  - SQL 실행 흐름과 조인 전략
-  - 실행 계획과 쿼리 튜닝
-  - 정규화와 비정규화
 - 데이터 모델링 (Data Modeling)
   - 엔티티와 관계 설계
   - PK / FK 선택 기준
