@@ -9,16 +9,13 @@
 - 프로그래밍 언어
   - [JavaScript](javascript.md)
   - [Go](go.md)
+- [자료구조 (Data Structures)](data-structures.md)
+- [알고리즘 (Algorithms)](algorithms.md)
+- [동시성 (Concurrency)](concurrency.md)
 - [LeetCode 문제 풀이](https://zeikar.github.io/leetcode/)
 
 ## 작성 예정 주제
 
-- 자료구조 (Data Structures)
-- 알고리즘 (Algorithms)
-- 동시성 (Concurrency)
-  - 스레드와 프로세스
-  - 동기화와 경쟁 조건
-  - 락, 세마포어, 뮤텍스
 - 테스트와 품질 (Testing & Quality)
   - 단위 테스트, 통합 테스트, 계약 테스트
   - 테스트 더블과 목 객체

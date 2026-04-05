@@ -8,31 +8,13 @@
 
 - [시스템 디자인 기초 (System Design Basics)](system-design-basics.md)
 - [확장성 (Scalability)](scalability.md)
+- [캐싱 전략 (Caching Strategy)](caching-strategy.md)
 - [로드 밸런싱 (Load Balancing)](load-balancing.md)
 - [고가용성 (High Availability)](high-availability.md)
 - [API 설계 (API Design)](api-design.md)
 - [데이터베이스 설계 (Database Design)](database-design.md)
+- [마이크로서비스 아키텍처 (Microservices Architecture)](microservices-architecture.md)
 - [분산 시스템 (Distributed Systems)](distributed-systems.md)
-
-## 작성 예정 주제
-
-- 캐싱 전략
-  - 캐시 유형 (CDN, 애플리케이션 캐시, 데이터베이스 캐시)
-  - 캐시 패턴 (Cache-Aside, Write-Through, Write-Back)
-  - 캐시 무효화 (Invalidation) 전략
-- 마이크로서비스 아키텍처
-  - 모놀리식 vs 마이크로서비스
-  - 서비스 분리 기준
-  - 서비스 간 통신
-- 메시징 및 이벤트 기반 아키텍처
-  - 메시지 큐 (Kafka, RabbitMQ 등)
-  - 이벤트 소싱 (Event Sourcing)
-  - CQRS (Command Query Responsibility Segregation)
-- 보안 설계
-  - 인증 및 권한 부여
-  - API 보안
-  - 데이터 암호화 및 보안 저장
-- 모니터링 및 로깅
-  - 분산 트레이싱
-  - 로그 집계 및 분석
-  - 알림 및 대시보드 설계
+- [메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)](event-driven-architecture.md)
+- [보안 설계 (Security Design)](security-design.md)
+- [모니터링 및 로깅 (Monitoring & Logging)](monitoring-and-logging.md)
