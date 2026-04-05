@@ -6,26 +6,17 @@
 
 ## 목차
 
-- 현재 작성된 문서가 없습니다.
+- [시스템 디자인 기초 (System Design Basics)](system-design-basics.md)
+- [로드 밸런싱 (Load Balancing)](load-balancing.md)
+- [고가용성 (High Availability)](high-availability.md)
+- [API 설계 (API Design)](api-design.md)
 
 ## 작성 예정 주제
 
-- 시스템 디자인 기초
-  - 시스템 디자인 인터뷰 접근 방법
-  - 기능적/비기능적 요구사항 식별하기
-  - 시스템 디자인 관련 핵심 개념
 - 확장성 (Scalability)
   - 수직적 확장 vs 수평적 확장
   - 상태 유지 (Stateful) vs 무상태 (Stateless) 서비스
   - 샤딩 전략 (Sharding Strategies)
-- 고가용성 (High Availability)
-  - 단일 장애점 (SPOF) 제거
-  - 리전/가용영역 전략
-  - 장애 복구 전략
-- 로드 밸런싱 (Load Balancing)
-  - 로드 밸런서 유형
-  - 로드 밸런싱 알고리즘
-  - 세션 관리 및 고정 세션 (Sticky Sessions)
 - 데이터베이스 설계
   - 데이터베이스 선택 기준
   - RDBMS vs NoSQL
@@ -34,10 +25,6 @@
   - 캐시 유형 (CDN, 애플리케이션 캐시, 데이터베이스 캐시)
   - 캐시 패턴 (Cache-Aside, Write-Through, Write-Back)
   - 캐시 무효화 (Invalidation) 전략
-- API 설계
-  - REST vs GraphQL vs gRPC
-  - API 버전 관리
-  - API 게이트웨이
 - 마이크로서비스 아키텍처
   - 모놀리식 vs 마이크로서비스
   - 서비스 분리 기준

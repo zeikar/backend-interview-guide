@@ -15,3 +15,21 @@
 
 - 자료구조 (Data Structures)
 - 알고리즘 (Algorithms)
+- 동시성 (Concurrency)
+  - 스레드와 프로세스
+  - 동기화와 경쟁 조건
+  - 락, 세마포어, 뮤텍스
+- 테스트와 품질 (Testing & Quality)
+  - 단위 테스트, 통합 테스트, 계약 테스트
+  - 테스트 더블과 목 객체
+  - 회귀 테스트 전략
+- 메모리와 실행 모델 (Memory & Execution Model)
+  - 스택과 힙
+  - 가비지 컬렉션
+  - 런타임과 성능 프로파일링
+- Java / JVM
+  - JVM 메모리 구조
+  - Garbage Collection
+  - Java 백엔드에서 자주 묻는 주제
+- 네트워크 I/O와 이벤트 루프
+- 에러 처리와 디버깅
