@@ -7,6 +7,8 @@
 ## 목차
 
 - [데이터 모델링 (Data Modeling)](data-modeling.md)
+- [스키마 마이그레이션 (Schema Migration)](schema-migration.md)
+- [검색과 인덱싱 (Search & Indexing)](search-and-indexing.md)
 - [백업과 복구 (Backup & Recovery)](backup-and-recovery.md)
 - [분산 데이터 처리 (Distributed Data Processing)](distributed-data-processing.md)
 - [PostgreSQL / MySQL](postgresql-mysql.md)
