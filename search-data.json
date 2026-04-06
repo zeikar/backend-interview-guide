@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /search-data.json
+---
+[
+{% assign comma = "" %}
+{% for page in site.pages %}
+  {% assign include_page = false %}
+  {% if page.path == "README.md" %}
+    {% assign include_page = true %}
+  {% elsif page.path contains "database/" or page.path contains "cloud/" or page.path contains "system-design/" or page.path contains "programming/" %}
+    {% if page.path contains ".md" %}
+      {% assign include_page = true %}
+    {% endif %}
+  {% endif %}
+  {% if page.name == "AGENTS.md" or page.name == "CLAUDE.md" or page.path contains "_workspace/" %}
+    {% assign include_page = false %}
+  {% endif %}
+  {% if page.search_exclude == true %}
+    {% assign include_page = false %}
+  {% endif %}
+  {% if include_page %}
+    {% if page.path == "README.md" %}
+      {% assign category = "홈" %}
+    {% elsif page.path contains "database/" %}
+      {% assign category = "데이터베이스" %}
+    {% elsif page.path contains "cloud/" %}
+      {% assign category = "클라우드" %}
+    {% elsif page.path contains "system-design/" %}
+      {% assign category = "시스템 디자인" %}
+    {% elsif page.path contains "programming/" %}
+      {% assign category = "프로그래밍" %}
+    {% else %}
+      {% assign category = "" %}
+    {% endif %}
+{{ comma }}  {
+    "title": {{ page.title | default: page.name | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "description": {{ page.description | default: "" | jsonify }},
+    "category": {{ category | jsonify }},
+    "content": {{ page.content | strip_html | strip_newlines | replace: "  ", " " | jsonify }}
+  }
+    {% assign comma = "," %}
+  {% endif %}
+{% endfor %}
+]

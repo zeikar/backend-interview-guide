@@ -1,5 +1,9 @@
 <meta property="og:locale" content="ko_KR">
 <meta name="theme-color" content="#0f172a">
+<script>
+  window.GUIDE_SEARCH_DATA_URL = "{{ '/search-data.json' | relative_url }}";
+</script>
+<script defer src="{{ '/assets/js/search.js' | relative_url }}"></script>
 
 {% if page.url == "/" %}
 <script type="application/ld+json">
