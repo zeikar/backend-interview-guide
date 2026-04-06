@@ -6,9 +6,18 @@ permalink: /search-data.json
 {% assign comma = "" %}
 {% for page in site.html_pages %}
   {% assign include_page = false %}
-  {% assign is_root_page = page.path == "README.md" %}
-  {% assign is_section_page = page.name == "README.md" and page.dir != "/" %}
-  {% assign is_article_page = page.name != "README.md" and page.path contains "/" %}
+  {% assign is_root_page = false %}
+  {% assign is_section_page = false %}
+  {% assign is_article_page = false %}
+  {% if page.path == "README.md" %}
+    {% assign is_root_page = true %}
+  {% endif %}
+  {% if page.name == "README.md" and page.dir != "/" %}
+    {% assign is_section_page = true %}
+  {% endif %}
+  {% if page.name != "README.md" and page.path contains "/" %}
+    {% assign is_article_page = true %}
+  {% endif %}
   {% if is_root_page or is_section_page or is_article_page %}
     {% assign include_page = true %}
   {% endif %}
