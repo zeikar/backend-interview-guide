@@ -1,5 +1,6 @@
 ---
 title: 캐싱 전략 (Caching Strategy)
+description: 캐싱 전략을 설명할 때 어떤 데이터를 어디에 캐시하고 어떤 트레이드오프를 함께 말해야 하는지 정리했습니다.
 parent: 시스템 디자인
 nav_order: 4
 ---

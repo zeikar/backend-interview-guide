@@ -1,5 +1,6 @@
 ---
 title: 마이크로서비스 아키텍처 (Microservices Architecture, MSA)
+description: 마이크로서비스 아키텍처의 장단점과 설계 포인트를 백엔드 관점에서 정리했습니다.
 parent: 클라우드
 nav_order: 12
 ---

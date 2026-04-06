@@ -1,0 +1,21 @@
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#0f172a">
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title | escape }}",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "inLanguage": "ko-KR",
+  "description": "{{ page.description | default: site.description | strip_html | strip_newlines | escape }}",
+  "about": [
+    "백엔드 면접 질문",
+    "백엔드 개발자 면접 질문",
+    "시스템 디자인 면접 질문",
+    "데이터베이스 면접 질문"
+  ]
+}
+</script>
+{% endif %}

@@ -1,8 +1,9 @@
 ---
 title: 클라우드
-description: 클라우드 컴퓨팅, Kubernetes, 서버리스, 네트워크, 운영 자동화까지 백엔드 클라우드 면접 주제를 정리했습니다.
+description: 클라우드 컴퓨팅, Kubernetes, 서버리스, 네트워크, 보안, 운영 자동화까지 백엔드 클라우드 핵심 주제를 정리했습니다.
 nav_order: 2
 has_children: true
+has_toc: false
 permalink: /cloud/
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: 시스템 디자인
-description: 확장성, 캐싱, 로드 밸런싱, 멀티 테넌시, 보안 설계 등 시스템 디자인 면접 핵심 주제를 정리했습니다.
+description: 확장성, 캐싱, 로드 밸런싱, 데이터베이스 설계, 멀티 테넌시, 보안 설계까지 시스템 디자인 핵심 주제를 정리했습니다.
 nav_order: 3
 has_children: true
+has_toc: false
 permalink: /system-design/
 ---
 
