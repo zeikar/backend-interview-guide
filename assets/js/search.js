@@ -1,6 +1,6 @@
 (function () {
   const MIN_QUERY_LENGTH = 2;
-  const MAX_RESULTS = 8;
+  const MAX_RESULTS = 10;
   const SEARCH_DATA_URL =
     window.GUIDE_SEARCH_DATA_URL || "/backend-interview-guide/search-data.json";
 
@@ -55,19 +55,34 @@
     let score = 0;
 
     if (item._title === query || item._titleCompact === compactQuery) {
-      score += 120;
+      score += 240;
+    }
+    if (
+      item._title.startsWith(query) ||
+      item._titleCompact.startsWith(compactQuery)
+    ) {
+      score += 140;
     }
     if (item._title.includes(query) || item._titleCompact.includes(compactQuery)) {
-      score += 80;
+      score += 100;
+    }
+    if (normalizeText(item.category).includes(query)) {
+      score += 20;
     }
     if (
       item._description.includes(query) ||
       item._descriptionCompact.includes(compactQuery)
     ) {
-      score += 30;
+      score += 35;
     }
     if (item._content.includes(query) || item._contentCompact.includes(compactQuery)) {
-      score += 10;
+      score += 15;
+    }
+
+    if (item.kind === "home") {
+      score -= 35;
+    } else if (item.kind === "section") {
+      score -= 15;
     }
 
     return score;
@@ -105,32 +120,36 @@
     if (!items.length) {
       container.innerHTML =
         '<div class="guide-search-empty">검색 결과가 없습니다.</div>';
-      container.hidden = false;
       return;
     }
 
-    container.innerHTML = items
-      .map(
-        (item) => `
-          <a class="guide-search-result" href="${escapeHtml(item.url)}">
-            <span class="guide-search-result__category">${escapeHtml(item.category)}</span>
-            <strong class="guide-search-result__title">${escapeHtml(item.title)}</strong>
-            <span class="guide-search-result__snippet">${escapeHtml(item.snippet)}</span>
-          </a>
-        `,
-      )
-      .join("");
-    container.hidden = false;
+    container.innerHTML = `
+      <div class="search-results-list">
+        ${items
+          .map(
+            (item) => `
+              <a class="search-result guide-search-result" href="${escapeHtml(item.url)}">
+                <div class="guide-search-result__meta">
+                  <span class="guide-search-result__category">${escapeHtml(item.category)}</span>
+                  <span class="search-result-rel-url">${escapeHtml(item.url)}</span>
+                </div>
+                <strong class="search-result-title">${escapeHtml(item.title)}</strong>
+                <span class="search-result-preview">${escapeHtml(item.snippet)}</span>
+              </a>
+            `,
+          )
+          .join("")}
+      </div>
+    `;
   }
 
   function hideResults(container) {
-    container.hidden = true;
     container.innerHTML = "";
   }
 
   function initSearch() {
-    const input = document.getElementById("guide-search-input");
-    const results = document.getElementById("guide-search-results");
+    const input = document.getElementById("search-input");
+    const results = document.getElementById("search-results");
 
     if (!input || !results) {
       return;
@@ -178,7 +197,7 @@
     });
 
     document.addEventListener("click", (event) => {
-      if (!event.target.closest(".guide-search-shell")) {
+      if (!event.target.closest(".search")) {
         hideResults(results);
       }
     });

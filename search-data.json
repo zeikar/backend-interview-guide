@@ -4,14 +4,13 @@ permalink: /search-data.json
 ---
 [
 {% assign comma = "" %}
-{% for page in site.pages %}
+{% for page in site.html_pages %}
   {% assign include_page = false %}
-  {% if page.path == "README.md" %}
+  {% assign is_root_page = page.path == "README.md" %}
+  {% assign is_section_page = page.name == "README.md" and page.dir != "/" %}
+  {% assign is_article_page = page.name != "README.md" and page.path contains "/" %}
+  {% if is_root_page or is_section_page or is_article_page %}
     {% assign include_page = true %}
-  {% elsif page.path contains "database/" or page.path contains "cloud/" or page.path contains "system-design/" or page.path contains "programming/" %}
-    {% if page.path contains ".md" %}
-      {% assign include_page = true %}
-    {% endif %}
   {% endif %}
   {% if page.name == "AGENTS.md" or page.name == "CLAUDE.md" or page.path contains "_workspace/" %}
     {% assign include_page = false %}
@@ -20,24 +19,21 @@ permalink: /search-data.json
     {% assign include_page = false %}
   {% endif %}
   {% if include_page %}
-    {% if page.path == "README.md" %}
+    {% assign kind = "article" %}
+    {% assign category = page.parent | default: "" %}
+    {% if is_root_page %}
+      {% assign kind = "home" %}
       {% assign category = "홈" %}
-    {% elsif page.path contains "database/" %}
-      {% assign category = "데이터베이스" %}
-    {% elsif page.path contains "cloud/" %}
-      {% assign category = "클라우드" %}
-    {% elsif page.path contains "system-design/" %}
-      {% assign category = "시스템 디자인" %}
-    {% elsif page.path contains "programming/" %}
-      {% assign category = "프로그래밍" %}
-    {% else %}
-      {% assign category = "" %}
+    {% elsif is_section_page %}
+      {% assign kind = "section" %}
+      {% assign category = page.title | default: page.name %}
     {% endif %}
 {{ comma }}  {
     "title": {{ page.title | default: page.name | jsonify }},
     "url": {{ page.url | relative_url | jsonify }},
     "description": {{ page.description | default: "" | jsonify }},
     "category": {{ category | jsonify }},
+    "kind": {{ kind | jsonify }},
     "content": {{ page.content | strip_html | strip_newlines | replace: "  ", " " | jsonify }}
   }
     {% assign comma = "," %}
