@@ -209,15 +209,6 @@
     renderResults(results, matches);
   }
 
-  let searchRafId = 0;
-
-  function scheduleSearch(input, results) {
-    cancelAnimationFrame(searchRafId);
-    searchRafId = requestAnimationFrame(() => {
-      runSearch(input, results).catch(console.error);
-    });
-  }
-
   function initSearch() {
     const input = document.getElementById("search-input");
     const results = document.getElementById("search-results");
@@ -230,20 +221,11 @@
       isComposing = true;
     });
 
-    input.addEventListener("compositionupdate", () => {
-      scheduleSearch(input, results);
-    });
-
     input.addEventListener("compositionend", () => {
       isComposing = false;
-      scheduleSearch(input, results);
     });
 
-    input.addEventListener("input", async (event) => {
-      if (isComposing || event.isComposing) {
-        return;
-      }
-
+    input.addEventListener("input", async () => {
       await runSearch(input, results);
     });
 
