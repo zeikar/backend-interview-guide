@@ -120,6 +120,7 @@
     if (!items.length) {
       container.innerHTML =
         '<div class="guide-search-empty">검색 결과가 없습니다.</div>';
+      document.documentElement.classList.add("search-active");
       return;
     }
 
@@ -141,10 +142,12 @@
           .join("")}
       </div>
     `;
+    document.documentElement.classList.add("search-active");
   }
 
   function hideResults(container) {
     container.innerHTML = "";
+    document.documentElement.classList.remove("search-active");
   }
 
   function initSearch() {
@@ -184,6 +187,9 @@
     input.addEventListener("focus", async () => {
       try {
         await fetchSearchIndex();
+        if (normalizeText(input.value).length >= MIN_QUERY_LENGTH) {
+          document.documentElement.classList.add("search-active");
+        }
       } catch (error) {
         console.error(error);
       }
@@ -193,6 +199,15 @@
       if (event.key === "Escape") {
         hideResults(results);
         input.blur();
+        return;
+      }
+
+      if (event.key === "Enter") {
+        const firstResult = results.querySelector("a.search-result");
+        if (firstResult) {
+          event.preventDefault();
+          firstResult.click();
+        }
       }
     });
 
