@@ -1,5 +1,5 @@
 (function () {
-  const MIN_QUERY_LENGTH = 2;
+  const MIN_QUERY_LENGTH = 1;
   const MAX_RESULTS = 10;
   const SEARCH_DATA_URL =
     window.GUIDE_SEARCH_DATA_URL || "/backend-interview-guide/search-data.json";
@@ -219,6 +219,10 @@
 
     input.addEventListener("compositionstart", () => {
       isComposing = true;
+    });
+
+    input.addEventListener("compositionupdate", async () => {
+      await runSearch(input, results);
     });
 
     input.addEventListener("compositionend", async () => {
