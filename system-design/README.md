@@ -7,6 +7,7 @@
 ## 목차
 
 - [시스템 디자인 기초 (System Design Basics)](system-design-basics.md)
+- [실전 화이트보드 면접 예시 (Whiteboard Interview Example)](whiteboard-interview-example.md)
 - [확장성 (Scalability)](scalability.md)
 - [캐싱 전략 (Caching Strategy)](caching-strategy.md)
 - [로드 밸런싱 (Load Balancing)](load-balancing.md)
