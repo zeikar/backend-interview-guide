@@ -1,5 +1,6 @@
 ---
 title: 클라우드 컴퓨팅 (Cloud Computing)
+description: 클라우드 컴퓨팅의 기본 개념과 IaaS, PaaS, SaaS 차이를 백엔드 관점에서 정리했습니다.
 parent: 클라우드
 nav_order: 1
 ---

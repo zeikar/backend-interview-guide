@@ -1,5 +1,6 @@
 ---
 title: 데이터 모델링 (Data Modeling)
+description: 요구사항을 테이블, 관계, 키, 제약 조건으로 바꾸는 데이터 모델링 핵심 원칙을 정리했습니다.
 parent: 데이터베이스
 nav_order: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: 테스트와 품질 (Testing & Quality)
+description: 테스트 전략, 품질 관리, 유지보수 가능한 코드 기준을 설명할 때 핵심 포인트를 정리했습니다.
 parent: 프로그래밍
 nav_order: 7
 ---

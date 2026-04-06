@@ -1,5 +1,6 @@
 ---
 title: 데이터베이스 최적화 (Database Optimization)
+description: 인덱스, 실행 계획, 병목 분석처럼 데이터베이스 최적화에서 자주 나오는 핵심 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 9
 ---

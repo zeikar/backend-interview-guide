@@ -1,5 +1,6 @@
 ---
 title: IaC (Infrastructure as Code)
+description: IaC의 목적, 선언형 관리, 변경 추적과 운영 자동화의 핵심 포인트를 정리했습니다.
 parent: 클라우드
 nav_order: 6
 ---

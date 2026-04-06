@@ -1,5 +1,6 @@
 ---
 title: 분산 데이터 처리 (Distributed Data Processing)
+description: 분산 트랜잭션, 이벤트, 일관성처럼 여러 저장소에 걸친 데이터 처리를 설명할 때 핵심 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 5
 ---

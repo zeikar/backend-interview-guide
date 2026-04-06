@@ -1,5 +1,6 @@
 ---
 title: 메시징 시스템 (Messaging System)
+description: 메시징 시스템의 역할, 큐와 스트림 차이, Kafka와 RabbitMQ 비교 포인트를 정리했습니다.
 parent: 클라우드
 nav_order: 13
 ---

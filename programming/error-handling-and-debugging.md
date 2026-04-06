@@ -1,5 +1,6 @@
 ---
 title: 에러 처리와 디버깅 (Error Handling and Debugging)
+description: 예외 처리 전략, 장애 분석, 디버깅 접근법을 설명할 때 핵심 포인트를 정리했습니다.
 parent: 프로그래밍
 nav_order: 10
 ---

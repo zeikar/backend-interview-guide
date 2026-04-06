@@ -1,5 +1,6 @@
 ---
 title: 검색과 인덱싱 (Search and Indexing)
+description: 검색과 인덱싱의 차이, 인덱스 설계, 검색 품질을 좌우하는 핵심 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 3
 ---

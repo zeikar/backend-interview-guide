@@ -1,5 +1,6 @@
 ---
 title: 로깅 및 모니터링 (Logging & Monitoring)
+description: 로그, 메트릭, 트레이싱을 통해 분산 시스템을 관측하는 핵심 포인트를 정리했습니다.
 parent: 클라우드
 nav_order: 16
 ---

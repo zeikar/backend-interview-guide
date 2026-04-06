@@ -1,5 +1,6 @@
 ---
 title: 배포 전략과 CI/CD (Deployment Strategies and CI/CD)
+description: CI/CD 흐름과 배포 전략, 롤백, 운영 안전성을 높이는 핵심 포인트를 정리했습니다.
 parent: 클라우드
 nav_order: 5
 ---

@@ -1,5 +1,6 @@
 ---
 title: 컨테이너 (Container)
+description: 컨테이너의 동작 원리, VM과의 차이, 이미지와 런타임의 핵심 개념을 정리했습니다.
 parent: 클라우드
 nav_order: 2
 ---

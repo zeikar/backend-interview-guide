@@ -1,5 +1,6 @@
 ---
 title: NoSQL 데이터 모델링 (NoSQL Data Modeling)
+description: 조회 패턴 중심 설계, 비정규화, 데이터 중복처럼 NoSQL 모델링의 핵심 원칙을 정리했습니다.
 parent: 데이터베이스
 nav_order: 14
 ---

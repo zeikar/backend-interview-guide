@@ -1,5 +1,6 @@
 ---
 title: 마이크로서비스 아키텍처 (Microservices Architecture)
+description: 서비스 경계, 배포 독립성, 데이터 분리와 운영 복잡도를 포함한 MSA 설계 포인트를 정리했습니다.
 parent: 시스템 디자인
 nav_order: 11
 ---

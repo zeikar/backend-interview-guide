@@ -1,5 +1,6 @@
 ---
 title: 메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)
+description: 이벤트 기반 아키텍처의 장단점, 비동기 흐름, 데이터 일관성 설계 포인트를 정리했습니다.
 parent: 시스템 디자인
 nav_order: 13
 ---

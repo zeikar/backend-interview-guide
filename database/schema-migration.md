@@ -1,5 +1,6 @@
 ---
 title: 스키마 마이그레이션 (Schema Migration)
+description: 스키마 마이그레이션 절차, 무중단 변경, 롤백 전략에서 핵심이 되는 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 2
 ---

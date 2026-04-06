@@ -1,5 +1,6 @@
 ---
 title: 메모리와 실행 모델 (Memory & Execution Model)
+description: 메모리 구조, 스택과 힙, 참조와 실행 모델을 설명할 때 핵심 포인트를 정리했습니다.
 parent: 프로그래밍
 nav_order: 8
 ---

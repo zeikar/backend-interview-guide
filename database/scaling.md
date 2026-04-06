@@ -1,5 +1,6 @@
 ---
 title: 데이터베이스 스케일링 (Database Scaling)
+description: 복제, 샤딩, 파티셔닝처럼 데이터베이스 스케일링을 설명할 때 핵심이 되는 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 8
 ---

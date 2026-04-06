@@ -1,5 +1,6 @@
 ---
 title: 백업과 복구 (Backup and Recovery)
+description: 백업 전략, 복구 절차, RPO/RTO, PITR처럼 장애 복원에서 핵심이 되는 포인트를 정리했습니다.
 parent: 데이터베이스
 nav_order: 4
 ---

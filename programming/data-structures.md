@@ -1,5 +1,6 @@
 ---
 title: 자료구조 (Data Structures)
+description: 배열, 리스트, 해시, 트리, 힙처럼 대표 자료구조의 특성과 선택 기준을 정리했습니다.
 parent: 프로그래밍
 nav_order: 4
 ---

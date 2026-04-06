@@ -1,5 +1,6 @@
 ---
 title: MongoDB
+description: MongoDB의 문서 모델, 장단점, 인덱스와 운영 포인트를 백엔드 관점에서 정리했습니다.
 parent: 데이터베이스
 nav_order: 15
 ---

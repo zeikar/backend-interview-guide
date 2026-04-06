@@ -1,5 +1,6 @@
 ---
 title: 작업 스케줄링과 워크플로우 (Job Scheduling and Workflows)
+description: 배치 작업, 스케줄링, 재시도, 워크플로우 오케스트레이션의 핵심 포인트를 정리했습니다.
 parent: 클라우드
 nav_order: 17
 ---
