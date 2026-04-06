@@ -5,6 +5,8 @@
     window.GUIDE_SEARCH_DATA_URL || "/backend-interview-guide/search-data.json";
 
   let searchIndexPromise;
+  let isComposing = false;
+  let activeIndex = -1;
 
   function normalizeText(value) {
     return String(value || "")
@@ -102,7 +104,9 @@
     let index = lowerContent.indexOf(query);
 
     if (index < 0 && compactQuery) {
-      index = compactText(rawContent).indexOf(compactQuery);
+      if (compactText(rawContent).includes(compactQuery)) {
+        return rawContent.slice(0, 120);
+      }
     }
 
     if (index < 0) {
@@ -120,6 +124,7 @@
     if (!items.length) {
       container.innerHTML =
         '<div class="guide-search-empty">검색 결과가 없습니다.</div>';
+      activeIndex = -1;
       document.documentElement.classList.add("search-active");
       return;
     }
@@ -128,8 +133,12 @@
       <div class="search-results-list">
         ${items
           .map(
-            (item) => `
-              <a class="search-result guide-search-result" href="${escapeHtml(item.url)}">
+            (item, index) => `
+              <a
+                class="search-result guide-search-result${index === activeIndex ? " active" : ""}"
+                href="${escapeHtml(item.url)}"
+                data-search-index="${index}"
+              >
                 <div class="guide-search-result__meta">
                   <span class="guide-search-result__category">${escapeHtml(item.category)}</span>
                   <span class="search-result-rel-url">${escapeHtml(item.url)}</span>
@@ -147,7 +156,57 @@
 
   function hideResults(container) {
     container.innerHTML = "";
+    activeIndex = -1;
     document.documentElement.classList.remove("search-active");
+  }
+
+  function getResultLinks(container) {
+    return Array.from(container.querySelectorAll("a.search-result"));
+  }
+
+  function setActiveResult(container, index) {
+    const links = getResultLinks(container);
+    if (!links.length) {
+      activeIndex = -1;
+      return;
+    }
+
+    activeIndex = Math.max(0, Math.min(index, links.length - 1));
+    links.forEach((link, linkIndex) => {
+      link.classList.toggle("active", linkIndex === activeIndex);
+    });
+
+    const activeLink = links[activeIndex];
+    if (activeLink) {
+      activeLink.scrollIntoView({ block: "nearest" });
+    }
+  }
+
+  async function runSearch(input, results) {
+    const query = normalizeText(input.value);
+    const compactQuery = compactText(input.value);
+
+    if (query.length < MIN_QUERY_LENGTH) {
+      hideResults(results);
+      return;
+    }
+
+    const index = await fetchSearchIndex();
+    const matches = index
+      .map((item) => ({
+        ...item,
+        score: scoreItem(item, query, compactQuery),
+      }))
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score || a.title.length - b.title.length)
+      .slice(0, MAX_RESULTS)
+      .map((item) => ({
+        ...item,
+        snippet: buildSnippet(item, query, compactQuery),
+      }));
+
+    activeIndex = matches.length ? 0 : -1;
+    renderResults(results, matches);
   }
 
   function initSearch() {
@@ -158,30 +217,21 @@
       return;
     }
 
-    input.addEventListener("input", async (event) => {
-      const query = normalizeText(event.target.value);
-      const compactQuery = compactText(event.target.value);
+    input.addEventListener("compositionstart", () => {
+      isComposing = true;
+    });
 
-      if (query.length < MIN_QUERY_LENGTH) {
-        hideResults(results);
+    input.addEventListener("compositionend", async () => {
+      isComposing = false;
+      await runSearch(input, results);
+    });
+
+    input.addEventListener("input", async (event) => {
+      if (isComposing || event.isComposing) {
         return;
       }
 
-      const index = await fetchSearchIndex();
-      const matches = index
-        .map((item) => ({
-          ...item,
-          score: scoreItem(item, query, compactQuery),
-        }))
-        .filter((item) => item.score > 0)
-        .sort((a, b) => b.score - a.score || a.title.length - b.title.length)
-        .slice(0, MAX_RESULTS)
-        .map((item) => ({
-          ...item,
-          snippet: buildSnippet(item, query, compactQuery),
-        }));
-
-      renderResults(results, matches);
+      await runSearch(input, results);
     });
 
     input.addEventListener("focus", async () => {
@@ -202,12 +252,51 @@
         return;
       }
 
-      if (event.key === "Enter") {
-        const firstResult = results.querySelector("a.search-result");
-        if (firstResult) {
+      if (isComposing || event.isComposing) {
+        return;
+      }
+
+      if (event.key === "ArrowDown") {
+        const links = getResultLinks(results);
+        if (links.length) {
           event.preventDefault();
-          firstResult.click();
+          setActiveResult(results, activeIndex < 0 ? 0 : activeIndex + 1);
         }
+        return;
+      }
+
+      if (event.key === "ArrowUp") {
+        const links = getResultLinks(results);
+        if (links.length) {
+          event.preventDefault();
+          setActiveResult(
+            results,
+            activeIndex < 0 ? links.length - 1 : activeIndex - 1,
+          );
+        }
+        return;
+      }
+
+      if (event.key === "Enter") {
+        const links = getResultLinks(results);
+        const targetResult =
+          activeIndex >= 0 ? links[activeIndex] : links[0];
+        if (targetResult) {
+          event.preventDefault();
+          targetResult.click();
+        }
+      }
+    });
+
+    results.addEventListener("mousemove", (event) => {
+      const hoveredResult = event.target.closest("a.search-result");
+      if (!hoveredResult) {
+        return;
+      }
+
+      const hoveredIndex = Number(hoveredResult.dataset.searchIndex);
+      if (!Number.isNaN(hoveredIndex)) {
+        setActiveResult(results, hoveredIndex);
       }
     });
 
