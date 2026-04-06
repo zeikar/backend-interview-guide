@@ -1,3 +1,9 @@
+---
+title: 데이터베이스 설계 (Database Design)
+parent: 시스템 디자인
+nav_order: 9
+---
+
 # 데이터베이스 설계 (Database Design)
 
 ## 목차

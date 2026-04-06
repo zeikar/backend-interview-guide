@@ -1,3 +1,9 @@
+---
+title: NoSQL 데이터베이스 (NoSQL Databases)
+parent: 데이터베이스
+nav_order: 13
+---
+
 # NoSQL 데이터베이스 (NoSQL Databases)
 
 ## 목차

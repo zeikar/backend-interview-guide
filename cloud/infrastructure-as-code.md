@@ -1,3 +1,9 @@
+---
+title: IaC (Infrastructure as Code)
+parent: 클라우드
+nav_order: 6
+---
+
 # IaC (Infrastructure as Code)
 
 ## 목차

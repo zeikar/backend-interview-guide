@@ -1,3 +1,9 @@
+---
+title: RDBMS와 SQL (RDBMS and SQL)
+parent: 데이터베이스
+nav_order: 7
+---
+
 # RDBMS와 SQL (RDBMS and SQL)
 
 ## 목차

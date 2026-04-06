@@ -1,3 +1,9 @@
+---
+title: 데이터베이스 트랜잭션과 일관성 (Database Transactions and Consistency)
+parent: 데이터베이스
+nav_order: 10
+---
+
 # 데이터베이스 트랜잭션과 일관성 (Database Transactions and Consistency)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 검색과 인덱싱 (Search and Indexing)
+parent: 데이터베이스
+nav_order: 3
+---
+
 # 검색과 인덱싱 (Search and Indexing)
 
 ## 목차

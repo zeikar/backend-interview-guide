@@ -1,3 +1,9 @@
+---
+title: 클라우드 보안 (Cloud Security)
+parent: 클라우드
+nav_order: 7
+---
+
 # 클라우드 보안 (Cloud Security)
 
 ## 목차

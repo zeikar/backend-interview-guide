@@ -1,3 +1,9 @@
+---
+title: 동시성 (Concurrency)
+parent: 프로그래밍
+nav_order: 6
+---
+
 # 동시성 (Concurrency)
 
 ## 목차

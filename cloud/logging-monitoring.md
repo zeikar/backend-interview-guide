@@ -1,3 +1,9 @@
+---
+title: 로깅 및 모니터링 (Logging & Monitoring)
+parent: 클라우드
+nav_order: 16
+---
+
 # 로깅 및 모니터링 (Logging & Monitoring)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: API 설계 (API Design)
+parent: 시스템 디자인
+nav_order: 7
+---
+
 # API 설계 (API Design)
 
 ## 목차

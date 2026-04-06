@@ -1,3 +1,9 @@
+---
+title: Redis
+parent: 데이터베이스
+nav_order: 12
+---
+
 # Redis
 
 ## 목차

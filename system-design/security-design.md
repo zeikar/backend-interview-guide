@@ -1,3 +1,9 @@
+---
+title: 보안 설계 (Security Design)
+parent: 시스템 디자인
+nav_order: 14
+---
+
 # 보안 설계 (Security Design)
 
 ## 목차

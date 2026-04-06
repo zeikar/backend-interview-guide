@@ -1,3 +1,9 @@
+---
+title: gRPC (Google Remote Procedure Call)
+parent: 클라우드
+nav_order: 14
+---
+
 # gRPC (Google Remote Procedure Call)
 
 ## 목차

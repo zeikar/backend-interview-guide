@@ -1,3 +1,9 @@
+---
+title: 알고리즘 (Algorithms)
+parent: 프로그래밍
+nav_order: 5
+---
+
 # 알고리즘 (Algorithms)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 모니터링 및 로깅 (Monitoring & Logging)
+parent: 시스템 디자인
+nav_order: 15
+---
+
 # 모니터링 및 로깅 (Monitoring & Logging)
 
 ## 목차

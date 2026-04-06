@@ -1,3 +1,9 @@
+---
+title: 테스트와 품질 (Testing & Quality)
+parent: 프로그래밍
+nav_order: 7
+---
+
 # 테스트와 품질 (Testing & Quality)
 
 ## 목차

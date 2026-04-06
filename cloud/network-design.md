@@ -1,3 +1,9 @@
+---
+title: 네트워크 설계 (Network Design)
+parent: 클라우드
+nav_order: 8
+---
+
 # 네트워크 설계 (Network Design)
 
 ## 목차

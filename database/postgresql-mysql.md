@@ -1,3 +1,9 @@
+---
+title: PostgreSQL / MySQL
+parent: 데이터베이스
+nav_order: 6
+---
+
 # PostgreSQL / MySQL
 
 ## 목차

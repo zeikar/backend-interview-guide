@@ -1,3 +1,9 @@
+---
+title: 분산 데이터 처리 (Distributed Data Processing)
+parent: 데이터베이스
+nav_order: 5
+---
+
 # 분산 데이터 처리 (Distributed Data Processing)
 
 ## 목차

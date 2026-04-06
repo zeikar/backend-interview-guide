@@ -1,3 +1,9 @@
+---
+title: 메모리와 실행 모델 (Memory & Execution Model)
+parent: 프로그래밍
+nav_order: 8
+---
+
 # 메모리와 실행 모델 (Memory & Execution Model)
 
 ## 목차

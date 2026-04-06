@@ -1,3 +1,9 @@
+---
+title: 분산 시스템 (Distributed Systems)
+parent: 시스템 디자인
+nav_order: 12
+---
+
 # 분산 시스템 (Distributed Systems)
 
 ## 목차

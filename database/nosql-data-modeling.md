@@ -1,3 +1,9 @@
+---
+title: NoSQL 데이터 모델링 (NoSQL Data Modeling)
+parent: 데이터베이스
+nav_order: 14
+---
+
 # NoSQL 데이터 모델링 (NoSQL Data Modeling)
 
 ## 목차

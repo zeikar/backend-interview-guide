@@ -1,3 +1,9 @@
+---
+title: 클라우드 컴퓨팅 (Cloud Computing)
+parent: 클라우드
+nav_order: 1
+---
+
 # 클라우드 컴퓨팅 (Cloud Computing)
 
 ## 목차

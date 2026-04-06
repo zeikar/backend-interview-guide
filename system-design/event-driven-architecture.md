@@ -1,3 +1,9 @@
+---
+title: 메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)
+parent: 시스템 디자인
+nav_order: 13
+---
+
 # 메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)
 
 ## 목차

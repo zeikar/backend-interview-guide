@@ -1,3 +1,9 @@
+---
+title: 오토스케일링과 용량 계획 (Autoscaling and Capacity Planning)
+parent: 클라우드
+nav_order: 9
+---
+
 # 오토스케일링과 용량 계획 (Autoscaling and Capacity Planning)
 
 ## 목차

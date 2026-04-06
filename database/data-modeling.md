@@ -1,3 +1,9 @@
+---
+title: 데이터 모델링 (Data Modeling)
+parent: 데이터베이스
+nav_order: 1
+---
+
 # 데이터 모델링 (Data Modeling)
 
 ## 목차

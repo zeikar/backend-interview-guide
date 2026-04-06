@@ -1,3 +1,9 @@
+---
+title: 멀티 테넌시 (Multi-Tenancy)
+parent: 시스템 디자인
+nav_order: 10
+---
+
 # 멀티 테넌시 (Multi-Tenancy)
 
 ## 목차

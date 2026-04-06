@@ -1,3 +1,9 @@
+---
+title: 확장성 (Scalability)
+parent: 시스템 디자인
+nav_order: 3
+---
+
 # 확장성 (Scalability)
 
 ## 목차

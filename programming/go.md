@@ -1,3 +1,9 @@
+---
+title: Go
+parent: 프로그래밍
+nav_order: 2
+---
+
 # Go
 
 ## 목차

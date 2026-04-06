@@ -1,3 +1,10 @@
+---
+title: 백엔드 개발자 면접 가이드
+description: 대규모 트래픽을 처리하는 백엔드 개발자 면접 주제를 데이터베이스, 클라우드, 시스템 디자인, 프로그래밍 카테고리로 정리한 가이드입니다.
+nav_exclude: true
+permalink: /
+---
+
 # 백엔드 개발자 면접 가이드
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)

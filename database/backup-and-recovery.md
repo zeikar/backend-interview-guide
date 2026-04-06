@@ -1,3 +1,9 @@
+---
+title: 백업과 복구 (Backup and Recovery)
+parent: 데이터베이스
+nav_order: 4
+---
+
 # 백업과 복구 (Backup and Recovery)
 
 ## 목차

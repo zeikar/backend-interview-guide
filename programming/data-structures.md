@@ -1,3 +1,9 @@
+---
+title: 자료구조 (Data Structures)
+parent: 프로그래밍
+nav_order: 4
+---
+
 # 자료구조 (Data Structures)
 
 ## 목차

@@ -1,3 +1,11 @@
+---
+title: 데이터베이스
+description: 데이터 모델링, 트랜잭션, 캐싱, NoSQL, 최적화까지 백엔드 데이터베이스 면접 핵심 주제를 정리했습니다.
+nav_order: 1
+has_children: true
+permalink: /database/
+---
+
 # 백엔드 데이터베이스 면접 질문 모음
 
 ## 소개

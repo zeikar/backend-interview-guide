@@ -1,3 +1,9 @@
+---
+title: 시스템 디자인 기초 (System Design Basics)
+parent: 시스템 디자인
+nav_order: 1
+---
+
 # 시스템 디자인 기초 (System Design Basics)
 
 ## 목차

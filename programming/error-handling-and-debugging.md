@@ -1,3 +1,9 @@
+---
+title: 에러 처리와 디버깅 (Error Handling and Debugging)
+parent: 프로그래밍
+nav_order: 10
+---
+
 # 에러 처리와 디버깅 (Error Handling and Debugging)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 장애 대응과 DR (Disaster Recovery)
+parent: 클라우드
+nav_order: 10
+---
+
 # 장애 대응과 DR (Disaster Recovery)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: JavaScript
+parent: 프로그래밍
+nav_order: 1
+---
+
 # JavaScript
 
 ## 목차

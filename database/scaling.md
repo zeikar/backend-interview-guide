@@ -1,3 +1,9 @@
+---
+title: 데이터베이스 스케일링 (Database Scaling)
+parent: 데이터베이스
+nav_order: 8
+---
+
 # 데이터베이스 스케일링 (Database Scaling)
 
 ## 목차

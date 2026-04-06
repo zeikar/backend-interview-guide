@@ -1,3 +1,9 @@
+---
+title: Python
+parent: 프로그래밍
+nav_order: 3
+---
+
 # Python
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 마이크로서비스 아키텍처 (Microservices Architecture)
+parent: 시스템 디자인
+nav_order: 11
+---
+
 # 마이크로서비스 아키텍처 (Microservices Architecture)
 
 ## 목차

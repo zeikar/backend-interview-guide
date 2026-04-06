@@ -1,3 +1,9 @@
+---
+title: 로드 밸런싱 (Load Balancing)
+parent: 시스템 디자인
+nav_order: 5
+---
+
 # 로드 밸런싱 (Load Balancing)
 
 ## 목차

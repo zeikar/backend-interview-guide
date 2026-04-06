@@ -1,3 +1,9 @@
+---
+title: 고가용성 (High Availability)
+parent: 시스템 디자인
+nav_order: 6
+---
+
 # 고가용성 (High Availability)
 
 ## 목차

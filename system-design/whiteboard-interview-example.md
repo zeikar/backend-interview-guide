@@ -1,3 +1,9 @@
+---
+title: 실전 화이트보드 면접 예시 (Whiteboard Interview Example)
+parent: 시스템 디자인
+nav_order: 2
+---
+
 # 실전 화이트보드 면접 예시 (Whiteboard Interview Example)
 
 ## 목차

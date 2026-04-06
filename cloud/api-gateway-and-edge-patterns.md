@@ -1,3 +1,9 @@
+---
+title: API Gateway와 Edge 패턴 (API Gateway and Edge Patterns)
+parent: 클라우드
+nav_order: 11
+---
+
 # API Gateway와 Edge 패턴 (API Gateway and Edge Patterns)
 
 ## 목차

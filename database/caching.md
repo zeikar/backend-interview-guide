@@ -1,3 +1,9 @@
+---
+title: 캐싱 (Caching)
+parent: 데이터베이스
+nav_order: 11
+---
+
 # 캐싱 (Caching)
 
 ## 목차

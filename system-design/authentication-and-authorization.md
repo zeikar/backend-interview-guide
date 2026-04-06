@@ -1,3 +1,9 @@
+---
+title: 인증과 인가 (Authentication & Authorization)
+parent: 시스템 디자인
+nav_order: 8
+---
+
 # 인증과 인가 (Authentication & Authorization)
 
 ## 목차

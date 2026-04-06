@@ -1,3 +1,9 @@
+---
+title: 데이터베이스 최적화 (Database Optimization)
+parent: 데이터베이스
+nav_order: 9
+---
+
 # 데이터베이스 최적화 (Database Optimization)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 마이크로서비스 아키텍처 (Microservices Architecture, MSA)
+parent: 클라우드
+nav_order: 12
+---
+
 # 마이크로서비스 아키텍처 (Microservices Architecture, MSA)
 
 ## 목차

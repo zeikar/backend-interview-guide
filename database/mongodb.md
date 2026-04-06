@@ -1,3 +1,9 @@
+---
+title: MongoDB
+parent: 데이터베이스
+nav_order: 15
+---
+
 # MongoDB
 
 ## 목차

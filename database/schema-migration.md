@@ -1,3 +1,9 @@
+---
+title: 스키마 마이그레이션 (Schema Migration)
+parent: 데이터베이스
+nav_order: 2
+---
+
 # 스키마 마이그레이션 (Schema Migration)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 캐싱 전략 (Caching Strategy)
+parent: 시스템 디자인
+nav_order: 4
+---
+
 # 캐싱 전략 (Caching Strategy)
 
 ## 목차

@@ -1,3 +1,9 @@
+---
+title: 배포 전략과 CI/CD (Deployment Strategies and CI/CD)
+parent: 클라우드
+nav_order: 5
+---
+
 # 배포 전략과 CI/CD (Deployment Strategies and CI/CD)
 
 ## 목차
