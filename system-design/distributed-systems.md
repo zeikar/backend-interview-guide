@@ -1,6 +1,6 @@
 ---
 title: 분산 시스템 (Distributed Systems)
-description: 분산 시스템의 기본 특성과 장애 모델, 일관성, 합의와 같은 핵심 개념을 정리했습니다.
+description: 장애 모델, 일관성, 합의 등 분산 시스템 면접 핵심 개념을 다룹니다.
 parent: 시스템 디자인
 nav_order: 12
 ---

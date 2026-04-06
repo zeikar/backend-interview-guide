@@ -1,6 +1,6 @@
 ---
 title: 서버리스 (Serverless)
-description: 서버리스의 실행 모델, 장단점, 콜드 스타트와 운영 트레이드오프를 정리했습니다.
+description: 서버리스 실행 모델, 콜드 스타트, 운영 트레이드오프를 살펴봅니다.
 parent: 클라우드
 nav_order: 4
 ---

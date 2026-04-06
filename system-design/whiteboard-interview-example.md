@@ -1,6 +1,6 @@
 ---
 title: 실전 화이트보드 면접 예시 (Whiteboard Interview Example)
-description: 화이트보드 면접에서 문제를 구조화하고 답변을 전개하는 실제 설명 흐름을 예시로 정리했습니다.
+description: 화이트보드 면접에서 문제를 구조화하고 답변을 전개하는 실제 흐름을 예시로 보여줍니다.
 parent: 시스템 디자인
 nav_order: 2
 ---

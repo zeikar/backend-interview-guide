@@ -1,6 +1,6 @@
 ---
 title: 네트워크 설계 (Network Design)
-description: VPC, 서브넷, 라우팅, 노출 경계처럼 클라우드 네트워크 설계의 핵심 포인트를 정리했습니다.
+description: VPC, 서브넷, 라우팅, 노출 경계 등 클라우드 네트워크 설계 핵심을 다룹니다.
 parent: 클라우드
 nav_order: 8
 ---

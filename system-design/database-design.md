@@ -1,6 +1,6 @@
 ---
 title: 데이터베이스 설계 (Database Design)
-description: 데이터베이스 설계에서 저장 모델, 접근 패턴, 정합성과 확장성의 균형을 잡는 포인트를 정리했습니다.
+description: 저장 모델, 접근 패턴, 정합성과 확장성의 균형을 잡는 DB 설계를 다룹니다.
 parent: 시스템 디자인
 nav_order: 9
 ---

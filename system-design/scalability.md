@@ -1,6 +1,6 @@
 ---
 title: 확장성 (Scalability)
-description: 수평 확장, 병목 제거, 상태 분리처럼 확장성을 설명할 때 핵심이 되는 포인트를 정리했습니다.
+description: 수평 확장, 병목 제거, 상태 분리 등 확장성 면접 핵심을 다룹니다.
 parent: 시스템 디자인
 nav_order: 3
 ---

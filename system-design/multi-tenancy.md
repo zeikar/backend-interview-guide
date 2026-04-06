@@ -1,6 +1,6 @@
 ---
 title: 멀티 테넌시 (Multi-Tenancy)
-description: 멀티 테넌시에서 격리 수준, 비용, 운영 복잡도 사이의 설계 트레이드오프를 정리했습니다.
+description: 격리 수준, 비용, 운영 복잡도 사이의 멀티 테넌시 설계 트레이드오프를 다룹니다.
 parent: 시스템 디자인
 nav_order: 10
 ---

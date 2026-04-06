@@ -1,6 +1,6 @@
 ---
 title: 장애 대응과 DR (Disaster Recovery)
-description: DR 전략, 백업 복구, RTO/RPO, 멀티 리전 대응에서 핵심이 되는 포인트를 정리했습니다.
+description: DR 전략, RTO/RPO, 멀티 리전 대응 등 장애 복구 면접 핵심을 다룹니다.
 parent: 클라우드
 nav_order: 10
 ---

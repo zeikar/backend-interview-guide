@@ -1,6 +1,6 @@
 ---
 title: Python
-description: Python의 핵심 문법, 실행 모델, 백엔드 개발에서 자주 나오는 포인트를 정리했습니다.
+description: GIL, 실행 모델, 백엔드 개발에서 자주 나오는 Python 면접 포인트를 다룹니다.
 parent: 프로그래밍
 nav_order: 3
 ---

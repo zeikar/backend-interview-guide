@@ -1,6 +1,6 @@
 ---
 title: 모니터링 및 로깅 (Monitoring & Logging)
-description: 모니터링과 로깅을 시스템 설계 단계에서 어떻게 구조화할지 핵심 포인트를 정리했습니다.
+description: 시스템 설계 단계에서 모니터링과 로깅을 어떻게 구조화할지 다룹니다.
 parent: 시스템 디자인
 nav_order: 15
 ---

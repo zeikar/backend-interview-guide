@@ -1,6 +1,6 @@
 ---
 title: Redis
-description: Redis의 자료구조, 활용 패턴, persistence와 운영 시 주의할 점을 정리했습니다.
+description: Redis 자료구조, 활용 패턴, persistence와 운영 시 주의점을 살펴봅니다.
 parent: 데이터베이스
 nav_order: 12
 ---

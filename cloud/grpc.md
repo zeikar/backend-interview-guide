@@ -1,6 +1,6 @@
 ---
 title: gRPC (Google Remote Procedure Call)
-description: gRPC의 기본 개념, HTTP/2와 Protocol Buffers, 서비스 간 통신 설계 포인트를 정리했습니다.
+description: gRPC의 동작 방식, HTTP/2와 Protocol Buffers, 서비스 간 통신 설계를 살펴봅니다.
 parent: 클라우드
 nav_order: 14
 ---

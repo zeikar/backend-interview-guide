@@ -1,6 +1,6 @@
 ---
 title: 서비스 메시 (Service Mesh)
-description: 서비스 메시의 역할, 사이드카 패턴, 트래픽 제어와 observability 포인트를 정리했습니다.
+description: 사이드카 패턴, 트래픽 제어, observability 등 서비스 메시의 역할을 살펴봅니다.
 parent: 클라우드
 nav_order: 15
 ---

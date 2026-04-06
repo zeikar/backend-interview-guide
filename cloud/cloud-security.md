@@ -1,6 +1,6 @@
 ---
 title: 클라우드 보안 (Cloud Security)
-description: IAM, 네트워크 분리, 비밀 관리처럼 클라우드 보안에서 핵심이 되는 포인트를 정리했습니다.
+description: IAM, 네트워크 분리, 비밀 관리 등 클라우드 보안 면접 핵심을 다룹니다.
 parent: 클라우드
 nav_order: 7
 ---

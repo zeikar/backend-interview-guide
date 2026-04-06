@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-description: JavaScript의 핵심 문법, 비동기 모델, 실행 환경에서 자주 묻는 포인트를 정리했습니다.
+description: 비동기 모델, 실행 환경, 핵심 문법 등 JavaScript 면접 포인트를 다룹니다.
 parent: 프로그래밍
 nav_order: 1
 ---

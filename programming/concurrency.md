@@ -1,6 +1,6 @@
 ---
 title: 동시성 (Concurrency)
-description: 동시성 개념과 경쟁 조건, 락, 데드락을 설명할 때 핵심이 되는 포인트를 정리했습니다.
+description: 경쟁 조건, 락, 데드락 등 동시성 면접에서 꼭 알아야 할 핵심을 다룹니다.
 parent: 프로그래밍
 nav_order: 6
 ---

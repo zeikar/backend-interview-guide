@@ -1,6 +1,6 @@
 ---
 title: 네트워크 I/O와 이벤트 루프 (Network I/O and Event Loop)
-description: 네트워크 I/O, 논블로킹 모델, 이벤트 루프와 백프레셔의 핵심 포인트를 정리했습니다.
+description: 논블로킹 I/O, 이벤트 루프, 백프레셔 등 네트워크 처리 핵심을 다룹니다.
 parent: 프로그래밍
 nav_order: 9
 ---

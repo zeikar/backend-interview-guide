@@ -1,6 +1,6 @@
 ---
 title: 시스템 디자인 기초 (System Design Basics)
-description: 시스템 디자인을 설명할 때 요구사항 정리, 규모 추정, 컴포넌트 분해를 어떤 흐름으로 가져가면 좋은지 정리한 문서입니다.
+description: 요구사항 정리, 규모 추정, 컴포넌트 분해 등 시스템 디자인 면접의 기본 흐름을 다룹니다.
 parent: 시스템 디자인
 nav_order: 1
 ---

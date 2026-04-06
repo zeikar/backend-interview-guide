@@ -1,6 +1,6 @@
 ---
 title: 보안 설계 (Security Design)
-description: 인증, 권한, 비밀 관리, 네트워크 통제까지 보안 설계의 핵심 포인트를 정리했습니다.
+description: 인증, 권한, 비밀 관리, 네트워크 통제 등 보안 설계 핵심을 다룹니다.
 parent: 시스템 디자인
 nav_order: 14
 ---

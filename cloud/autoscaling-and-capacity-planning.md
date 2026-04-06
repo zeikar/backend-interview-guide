@@ -1,6 +1,6 @@
 ---
 title: 오토스케일링과 용량 계획 (Autoscaling and Capacity Planning)
-description: 오토스케일링 기준, 병목 지표, 용량 계획을 설명할 때 핵심 포인트를 정리했습니다.
+description: 오토스케일링 기준, 병목 지표, 용량 계획을 면접에서 어떻게 설명할지 다룹니다.
 parent: 클라우드
 nav_order: 9
 ---

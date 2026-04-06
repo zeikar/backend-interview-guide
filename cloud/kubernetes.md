@@ -1,6 +1,6 @@
 ---
 title: Kubernetes
-description: Kubernetes의 핵심 개념과 운영 포인트를 백엔드 관점에서 정리했습니다.
+description: Kubernetes 핵심 개념과 운영 포인트를 백엔드 면접 관점에서 살펴봅니다.
 parent: 클라우드
 nav_order: 3
 ---

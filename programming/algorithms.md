@@ -1,6 +1,6 @@
 ---
 title: 알고리즘 (Algorithms)
-description: 시간 복잡도, 공간 복잡도, 대표 알고리즘 패턴처럼 면접에서 자주 나오는 핵심 포인트를 정리했습니다.
+description: 시간·공간 복잡도, 대표 알고리즘 패턴 등 면접에서 자주 나오는 핵심을 다룹니다.
 parent: 프로그래밍
 nav_order: 5
 ---

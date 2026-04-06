@@ -1,6 +1,6 @@
 ---
 title: Go
-description: Go의 핵심 문법, 고루틴과 채널, 서버 개발에서 자주 나오는 포인트를 정리했습니다.
+description: 고루틴, 채널, 에러 처리 등 Go 백엔드 면접에서 자주 나오는 포인트를 다룹니다.
 parent: 프로그래밍
 nav_order: 2
 ---

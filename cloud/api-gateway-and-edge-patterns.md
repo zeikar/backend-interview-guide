@@ -1,6 +1,6 @@
 ---
 title: API Gateway와 Edge 패턴 (API Gateway and Edge Patterns)
-description: API Gateway와 Edge 계층의 역할, 공통 처리 책임, 서비스 경계 설계 포인트를 정리했습니다.
+description: API Gateway의 역할, 공통 처리 책임, 서비스 경계 설계를 살펴봅니다.
 parent: 클라우드
 nav_order: 11
 ---
