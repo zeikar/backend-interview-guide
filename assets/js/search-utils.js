@@ -148,7 +148,17 @@
   }
 
   function buildSnippet(item, query, compactQuery) {
-    if (item.description) {
+    const description = String(item.description || "").trim();
+    const normalizedDescription = normalizeText(description);
+    const compactDescription = compactText(description);
+
+    if (
+      description &&
+      (
+        (query && normalizedDescription.includes(query)) ||
+        (compactQuery && compactDescription.includes(compactQuery))
+      )
+    ) {
       return item.description;
     }
 
@@ -168,6 +178,9 @@
     }
 
     if (index < 0) {
+      if (description) {
+        return description;
+      }
       return rawContent.slice(0, 120);
     }
 

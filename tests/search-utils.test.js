@@ -39,17 +39,45 @@ test("highlightText highlights compact matches across spaces", () => {
   );
 });
 
-test("buildSnippet prefers description when available", () => {
+test("buildSnippet prefers description when description matches query", () => {
   assert.equal(
     buildSnippet(
       {
         description: "설명 텍스트",
-        content: "본문 텍스트",
+        content: "본문에는 다른 내용이 있습니다.",
       },
       "설명",
       "설명",
     ),
     "설명 텍스트",
+  );
+});
+
+test("buildSnippet prefers content snippet when only content matches query", () => {
+  const snippet = buildSnippet(
+    {
+      description: "이 문서는 시스템 개요를 설명합니다.",
+      content: "트래픽은 로드 밸런싱 계층을 지나 여러 서버로 분산됩니다.",
+    },
+    "로드 밸런싱",
+    "로드밸런싱",
+  );
+
+  assert.match(snippet, /로드 밸런싱/);
+  assert.doesNotMatch(snippet, /시스템 개요/);
+});
+
+test("buildSnippet falls back to description when query matches neither description nor content", () => {
+  assert.equal(
+    buildSnippet(
+      {
+        description: "이 문서는 시스템 개요를 설명합니다.",
+        content: "트래픽은 여러 서버로 분산됩니다.",
+      },
+      "데이터베이스",
+      "데이터베이스",
+    ),
+    "이 문서는 시스템 개요를 설명합니다.",
   );
 });
 
