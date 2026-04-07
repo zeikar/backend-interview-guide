@@ -11,6 +11,7 @@ This repository is a Korean backend interview guide organized as Markdown conten
 - Do not add broken links to README files. If a topic is not written yet, list it as planned instead of linking a missing file.
 - Every content `.md` file must start with YAML front matter (`title`, `description`, `parent`, `nav_order`). Category READMEs additionally require `has_children`, `has_toc`, and `permalink`. See `style-guide.md` for the full template.
 - Prefer the repo-local checker at `scripts/check_markdown_links.py` after markdown edits that touch headings, anchors, or links.
+- After editing `assets/js/search-utils.js`, run `node --test tests/search-utils.test.js` to verify search logic.
 
 ## Writing Tips
 
