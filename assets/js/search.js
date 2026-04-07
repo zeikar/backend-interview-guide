@@ -28,6 +28,87 @@
       .replace(/'/g, "&#39;");
   }
 
+  function findCompactMatchRange(text, compactQuery) {
+    if (!compactQuery) {
+      return null;
+    }
+
+    const chars = Array.from(String(text || ""));
+    const compactChars = [];
+    const compactMap = [];
+
+    chars.forEach((char, index) => {
+      if (/\s/.test(char)) {
+        return;
+      }
+
+      compactChars.push(char.toLowerCase());
+      compactMap.push(index);
+    });
+
+    const compactTextValue = compactChars.join("");
+    const compactIndex = compactTextValue.indexOf(compactQuery);
+    if (compactIndex < 0) {
+      return null;
+    }
+
+    const start = compactMap[compactIndex];
+    const end = compactMap[compactIndex + compactQuery.length - 1] + 1;
+    return { start, end };
+  }
+
+  function highlightText(text, query, compactQuery) {
+    const rawText = String(text || "");
+    if (!rawText || (!query && !compactQuery)) {
+      return escapeHtml(rawText);
+    }
+
+    const loweredText = rawText.toLowerCase();
+    const ranges = [];
+    let searchFrom = 0;
+
+    while (query && query.length > 0) {
+      const matchIndex = loweredText.indexOf(query, searchFrom);
+      if (matchIndex < 0) {
+        break;
+      }
+
+      ranges.push({
+        start: matchIndex,
+        end: matchIndex + query.length,
+      });
+      searchFrom = matchIndex + Math.max(query.length, 1);
+    }
+
+    if (!ranges.length) {
+      const compactRange = findCompactMatchRange(rawText, compactQuery);
+      if (compactRange) {
+        ranges.push(compactRange);
+      }
+    }
+
+    if (!ranges.length) {
+      return escapeHtml(rawText);
+    }
+
+    let cursor = 0;
+    let result = "";
+    ranges.forEach((range) => {
+      if (range.start < cursor) {
+        return;
+      }
+
+      result += escapeHtml(rawText.slice(cursor, range.start));
+      result += `<mark class="guide-search-highlight">${escapeHtml(
+        rawText.slice(range.start, range.end),
+      )}</mark>`;
+      cursor = range.end;
+    });
+    result += escapeHtml(rawText.slice(cursor));
+
+    return result;
+  }
+
   function fetchSearchIndex() {
     if (!searchIndexPromise) {
       searchIndexPromise = fetch(SEARCH_DATA_URL)
@@ -104,8 +185,9 @@
     let index = lowerContent.indexOf(query);
 
     if (index < 0 && compactQuery) {
-      if (compactText(rawContent).includes(compactQuery)) {
-        return rawContent.slice(0, 120);
+      const compactRange = findCompactMatchRange(rawContent, compactQuery);
+      if (compactRange) {
+        index = compactRange.start;
       }
     }
 
@@ -120,7 +202,7 @@
     return prefix + rawContent.slice(start, end).trim() + suffix;
   }
 
-  function renderResults(container, items) {
+  function renderResults(container, items, query, compactQuery) {
     if (!items.length) {
       container.innerHTML =
         '<div class="guide-search-empty">검색 결과가 없습니다.</div>';
@@ -143,8 +225,16 @@
                   <span class="guide-search-result__category">${escapeHtml(item.category)}</span>
                   <span class="search-result-rel-url">${escapeHtml(item.url)}</span>
                 </div>
-                <strong class="search-result-title">${escapeHtml(item.title)}</strong>
-                <span class="search-result-preview">${escapeHtml(item.snippet)}</span>
+                <strong class="search-result-title">${highlightText(
+                  item.title,
+                  query,
+                  compactQuery,
+                )}</strong>
+                <span class="search-result-preview">${highlightText(
+                  item.snippet,
+                  query,
+                  compactQuery,
+                )}</span>
               </a>
             `,
           )
@@ -206,7 +296,7 @@
       }));
 
     activeIndex = matches.length ? 0 : -1;
-    renderResults(results, matches);
+    renderResults(results, matches, query, compactQuery);
   }
 
   function initSearch() {
