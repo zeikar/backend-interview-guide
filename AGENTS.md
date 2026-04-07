@@ -49,4 +49,4 @@ When scanning multiple documents (listing, comparing, or validating), read only 
 - `content-review`: use for technical accuracy, interview quality, and style review.
 - `consistency-check`: use for README/index cleanup, broken links, and structure checks.
 
-After any markdown edit that touches headings, anchors, or links, run `python scripts/check_markdown_links.py` to verify structural integrity.
+After any markdown edit that touches headings, anchors, or links, run `python3 scripts/check_markdown_links.py` to verify structural integrity.

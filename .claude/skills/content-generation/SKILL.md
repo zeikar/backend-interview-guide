@@ -126,13 +126,7 @@ nav_order: N (기존 문서의 nav_order를 확인하고 중복 없이 부여)
 
 ### Step 7: 링크 검증
 
-문서 작성/수정 후 반드시 실행:
-
-```bash
-python scripts/check_markdown_links.py {대상파일경로} {카테고리디렉토리}
-```
-
-오류가 있으면 수정 후 재실행한다.
+SubagentStop hook이 `check_markdown_links.py`를 자동 실행한다. 검증 실패 시 hook이 블로킹하므로 수동 실행은 불필요하다.
 
 ## 에러 핸들링
 

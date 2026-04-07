@@ -36,7 +36,7 @@ description: "백엔드 면접 가이드의 README 목차, 파일 구조, 문서
 ### Step 1: 스크립트 실행
 
 ```bash
-python scripts/check_markdown_links.py
+python3 scripts/check_markdown_links.py
 ```
 
 스크립트 결과를 파싱한다:

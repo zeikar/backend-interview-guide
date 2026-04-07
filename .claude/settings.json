@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SubagentStop": [
+      {
+        "matcher": "content-writer|consistency-checker",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/check_markdown_links.py 1>&2 || exit 2",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
