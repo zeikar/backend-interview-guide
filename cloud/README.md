@@ -28,6 +28,7 @@ permalink: /cloud/
 - [API Gateway와 Edge 패턴 (API Gateway and Edge Patterns)](api-gateway-and-edge-patterns.md)
 - [마이크로서비스 아키텍처 (MSA)](microservices.md)
   - [메시징 시스템 (Messaging System)](messaging-system.md)
+  - [Kafka (Apache Kafka)](kafka.md)
   - [gRPC](grpc.md)
   - [서비스 메시 (Service Mesh)](service-mesh.md)
   - [로깅 및 모니터링 (Logging & Monitoring)](logging-monitoring.md)

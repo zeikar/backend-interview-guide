@@ -22,6 +22,7 @@ permalink: /system-design/
 - [로드 밸런싱 (Load Balancing)](load-balancing.md)
 - [고가용성 (High Availability)](high-availability.md)
 - [API 설계 (API Design)](api-design.md)
+- [멱등성과 재시도 (Idempotency and Retry)](idempotency-and-retry.md)
 - [인증과 인가 (Authentication & Authorization)](authentication-and-authorization.md)
 - [데이터베이스 설계 (Database Design)](database-design.md)
 - [멀티 테넌시 (Multi-Tenancy)](multi-tenancy.md)

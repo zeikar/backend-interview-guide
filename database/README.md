@@ -25,6 +25,7 @@ permalink: /database/
 - [데이터베이스 스케일링](scaling.md)
 - [데이터베이스 최적화](optimization.md)
 - [트랜잭션 처리 및 일관성](transaction.md)
+- [데이터베이스 동시성 제어와 락](concurrency-control-and-locking.md)
 - [캐싱](caching.md)
   - [Redis](redis.md)
 - [NoSQL 데이터베이스](nosql.md)

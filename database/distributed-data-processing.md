@@ -68,6 +68,8 @@ nav_order: 5
 좋은 답변은 "트랜잭션으로 묶는다"에서 끝나지 않습니다.  
 **같은 DB 안에서의 원자성과, 외부 시스템까지 포함한 전파 보장은 다르다**고 먼저 구분하는 편이 좋습니다.
 
+Kafka의 producer/consumer, offset, rebalance 같은 구현 상세는 [Kafka (Apache Kafka)](../cloud/kafka.md) 문서가 더 직접적인 심화 자료입니다.
+
 ---
 
 ## Outbox Pattern
@@ -188,6 +190,8 @@ DB의 WAL, binlog 같은 변경 로그를 읽어 downstream으로 흘립니다.
 - "한 번 더 실행해도 결과가 같게" 설계
 
 실무에서는 구현 방식까지 한 단계 더 말할 수 있으면 답변이 훨씬 강해집니다.
+
+`Idempotency-Key`, retry 위치, backoff 같은 일반 설계 원칙은 [멱등성과 재시도 (Idempotency and Retry)](../system-design/idempotency-and-retry.md) 문서와 연결해 설명하면 좋습니다.
 
 ### 멱등성 구현 패턴
 

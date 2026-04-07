@@ -85,6 +85,8 @@ nav_order: 10
 
 예를 들어 PostgreSQL은 MVCC를 강하게 활용하고, MySQL InnoDB도 MVCC와 락을 함께 사용합니다.[^postgres-iso][^mysql-iso]
 
+실제 면접에서는 여기서 바로 `SELECT ... FOR UPDATE`, 낙관적 잠금, 데드락, `UNIQUE` 제약 기반 중복 방지 같은 꼬리질문으로 이어지는 경우가 많습니다. 이 구현 관점은 [데이터베이스 동시성 제어와 락 (Concurrency Control and Locking)](concurrency-control-and-locking.md) 문서에서 더 직접적으로 다룹니다.
+
 중요한 포인트는 다음입니다.
 
 - **격리 수준은 DBMS마다 구현 방식이 조금씩 다릅니다.**

@@ -119,6 +119,7 @@ nav_order: 12
 이렇게 경계를 나누는 편이 현실적입니다.
 
 관련 세부 내용은 [데이터베이스 트랜잭션과 일관성](../database/transaction.md), [메시징 시스템](../cloud/messaging-system.md) 문서와 함께 설명하면 좋습니다.  
+멱등 키 저장 전략, 재시도 위치, backoff 같은 설계 디테일은 [멱등성과 재시도 (Idempotency and Retry)](idempotency-and-retry.md) 문서가 더 직접적인 심화 자료입니다.  
 즉, 여기서는 업무별 일관성 경계를 어떻게 나눌지에 초점을 두고, DB 내부 보장과 구현 방식은 관련 상세 문서로 넘기는 편이 좋습니다.
 
 ---

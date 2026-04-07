@@ -114,6 +114,8 @@ Kafka를 설명할 때 중요한 포인트는 다음입니다.
 - consumer group 안에서는 각 파티션이 한 consumer에 할당됩니다.[^kafka-intro]
 - 메시지를 읽은 뒤에도 보존 기간 동안 다시 읽을 수 있습니다.
 
+Kafka의 `ISR`, `acks`, `offset commit`, `rebalance`, `lag` 같은 운영 꼬리질문은 [Kafka (Apache Kafka)](kafka.md) 문서에서 더 깊게 다룹니다.
+
 ### RabbitMQ
 
 **RabbitMQ** 는 AMQP 기반 메시지 브로커로, 큐와 exchange를 이용해 메시지를 유연하게 라우팅하는 데 강합니다.

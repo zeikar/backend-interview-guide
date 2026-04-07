@@ -158,6 +158,8 @@ RFC 9110은 `PUT`, `DELETE`, 그리고 safe method를 멱등한 메서드로 정
 
 이런 요청은 `POST` 이더라도 **Idempotency-Key** 같은 별도 키를 두어 중복 처리를 막는 경우가 많습니다.
 
+HTTP 메서드 의미와 비즈니스 멱등성을 어떻게 나눌지, `Idempotency-Key` 저장 전략과 재시도 위치를 더 깊게 보려면 [멱등성과 재시도 (Idempotency and Retry)](idempotency-and-retry.md) 문서를 같이 보면 좋습니다.
+
 오류 처리 시에는 다음을 같이 설계해야 합니다.
 
 - **상태 코드:** 2xx, 4xx, 5xx 의미 구분

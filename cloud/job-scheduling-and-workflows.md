@@ -41,6 +41,7 @@ nav_order: 17
 분산 비동기 처리 관점은 [메시징 시스템 (Messaging System)](messaging-system.md),  
 배포 자동화 관점은 [배포 전략과 CI/CD (Deployment Strategies and CI/CD)](ci-cd-and-deployment.md),  
 멱등성 일반론은 [분산 데이터 처리 (Distributed Data Processing)](../database/distributed-data-processing.md) 문서와 같이 보면 좋습니다.
+HTTP API, 워커, 메시지 소비자에서 재시도를 어디에 둘지와 `Idempotency-Key` 일반론은 [멱등성과 재시도 (Idempotency and Retry)](../system-design/idempotency-and-retry.md) 문서와 같이 보면 연결이 좋습니다.
 
 ---
 

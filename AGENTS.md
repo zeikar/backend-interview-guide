@@ -49,5 +49,6 @@ When scanning multiple documents (listing, comparing, or validating), read only 
 - `content-generation`: use for writing a new document or expanding an existing one.
 - `content-review`: use for technical accuracy, interview quality, and style review.
 - `consistency-check`: use for README/index cleanup, broken links, and structure checks.
+- When spawning sub-agents for this repository, prefer the latest strongest frontier model available unless the user explicitly asks for a smaller/faster model.
 
 After any markdown edit that touches headings, anchors, or links, run `python3 scripts/check_markdown_links.py` to verify structural integrity.
