@@ -1,5 +1,9 @@
 (function (root, factory) {
-  const api = factory();
+  const keyboardUtils =
+    typeof module === "object" && module.exports
+      ? require("./hangul-keyboard-utils.js")
+      : root && root.GuideHangulKeyboardUtils;
+  const api = factory(keyboardUtils || {});
 
   if (typeof module === "object" && module.exports) {
     module.exports = api;
@@ -8,7 +12,16 @@
   if (root) {
     root.GuideSearchUtils = api;
   }
-})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+})(typeof globalThis !== "undefined" ? globalThis : this, function (keyboardUtils) {
+  const {
+    convertEnglishTypedKorean = function (value) {
+      return String(value || "");
+    },
+    convertKoreanTypedEnglish = function (value) {
+      return String(value || "");
+    },
+  } = keyboardUtils;
+
   function normalizeText(value) {
     return String(value || "")
       .toLowerCase()
@@ -18,6 +31,61 @@
 
   function compactText(value) {
     return normalizeText(value).replace(/\s+/g, "");
+  }
+
+  function buildQueryVariants(raw) {
+    const candidates = [
+      String(raw || ""),
+      convertEnglishTypedKorean(raw),
+      convertKoreanTypedEnglish(raw),
+    ];
+    const seen = new Set();
+
+    return candidates
+      .map((candidate) => ({
+        raw: candidate,
+        query: normalizeText(candidate),
+        compactQuery: compactText(candidate),
+      }))
+      .filter((variant) => {
+        if (!variant.query || !variant.compactQuery) {
+          return false;
+        }
+
+        const key = `${variant.query}\u0000${variant.compactQuery}`;
+        if (seen.has(key)) {
+          return false;
+        }
+
+        seen.add(key);
+        return true;
+      });
+  }
+
+  function findBestVariantMatch(item, variants) {
+    let bestMatch = null;
+
+    variants.forEach((variant) => {
+      const score = scoreItem(item, variant.query, variant.compactQuery);
+
+      if (!bestMatch || score > bestMatch.score) {
+        bestMatch = {
+          score,
+          variant,
+          query: variant.query,
+          compactQuery: variant.compactQuery,
+        };
+      }
+    });
+
+    return (
+      bestMatch || {
+        score: 0,
+        variant: null,
+        query: "",
+        compactQuery: "",
+      }
+    );
   }
 
   function escapeHtml(value) {
@@ -193,8 +261,12 @@
 
   return {
     buildSnippet,
+    buildQueryVariants,
     compactText,
+    convertEnglishTypedKorean,
+    convertKoreanTypedEnglish,
     escapeHtml,
+    findBestVariantMatch,
     findCompactMatchRange,
     highlightText,
     normalizeText,

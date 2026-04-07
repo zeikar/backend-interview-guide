@@ -12,11 +12,12 @@
 
   const {
     buildSnippet,
+    buildQueryVariants,
     compactText,
     escapeHtml,
+    findBestVariantMatch,
     highlightText,
     normalizeText,
-    scoreItem,
   } = utils;
 
   let searchIndexPromise;
@@ -48,7 +49,7 @@
     return searchIndexPromise;
   }
 
-  function renderResults(container, items, query, compactQuery) {
+  function renderResults(container, items) {
     if (!items.length) {
       container.innerHTML =
         '<div class="guide-search-empty">검색 결과가 없습니다.</div>';
@@ -73,13 +74,13 @@
                 </div>
                 <strong class="search-result-title">${highlightText(
                   item.title,
-                  query,
-                  compactQuery,
+                  item.matchedQuery,
+                  item.matchedCompactQuery,
                 )}</strong>
                 <span class="search-result-preview">${highlightText(
                   item.snippet,
-                  query,
-                  compactQuery,
+                  item.matchedQuery,
+                  item.matchedCompactQuery,
                 )}</span>
               </a>
             `,
@@ -119,30 +120,42 @@
   }
 
   async function runSearch(input, results) {
+    const variants = buildQueryVariants(input.value);
     const query = normalizeText(input.value);
-    const compactQuery = compactText(input.value);
 
-    if (query.length < MIN_QUERY_LENGTH) {
+    if (query.length < MIN_QUERY_LENGTH || !variants.length) {
       hideResults(results);
       return;
     }
 
     const index = await fetchSearchIndex();
     const matches = index
-      .map((item) => ({
-        ...item,
-        score: scoreItem(item, query, compactQuery),
-      }))
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score || a.title.length - b.title.length)
+      .map((item) => {
+        const bestMatch = findBestVariantMatch(item, variants);
+
+        return {
+          ...item,
+          bestScore: bestMatch.score,
+          matchedQuery: bestMatch.query,
+          matchedCompactQuery: bestMatch.compactQuery,
+        };
+      })
+      .filter((item) => item.bestScore > 0)
+      .sort(
+        (a, b) => b.bestScore - a.bestScore || a.title.length - b.title.length,
+      )
       .slice(0, MAX_RESULTS)
       .map((item) => ({
         ...item,
-        snippet: buildSnippet(item, query, compactQuery),
+        snippet: buildSnippet(
+          item,
+          item.matchedQuery,
+          item.matchedCompactQuery,
+        ),
       }));
 
     activeIndex = matches.length ? 0 : -1;
-    renderResults(results, matches, query, compactQuery);
+    renderResults(results, matches);
   }
 
   function initSearch() {
