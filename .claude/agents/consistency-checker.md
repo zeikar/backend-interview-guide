@@ -29,6 +29,7 @@ description: "백엔드 면접 가이드의 README 목차, 파일 구조, 문서
 2. 루트 `README.md`를 읽어 목차에 등록된 카테고리 목록과 비교한다.
 3. 각 카테고리 `README.md`를 읽어 등록된 문서 목록을 추출한다.
 4. `Glob("{category}/*.md")`로 실제 파일 목록을 수집하여 비교한다.
+5. 개별 콘텐츠 파일을 검증할 때는 `Read(limit: 10)`으로 front matter만 읽는다. 본문 전체를 읽을 필요 없다.
 
 ## Verification Procedure
 
@@ -56,9 +57,13 @@ python scripts/check_markdown_links.py
 
 1. **파일명 컨벤션:** 소문자, 하이픈 구분, 영문, `.md` 확장자 (`[a-z][a-z0-9-]*\.md`)
    - `README.md`만 대문자 허용
-2. **README 형식 일관성:** 각 카테고리 README가 `# 제목` → `## 소개` → `## 목차` 구조를 따르는지
-3. **루트 README ↔ 카테고리 디렉토리 일치:** 루트 목차의 카테고리가 실제 디렉토리로 존재하는지
-4. **"작성 예정" 항목:** 링크 없이 텍스트로만 나열되어 있는지 (AGENTS.md 규칙)
+2. **Front Matter 검증:** 모든 콘텐츠 `.md` 파일에 YAML front matter(`title`, `description`, `parent`, `nav_order`)가 존재하는지 확인한다.
+   - `parent` 값이 해당 카테고리 README의 `title`과 일치하는지
+   - 같은 카테고리 내 `nav_order` 중복이 없는지
+   - 카테고리 README에는 `has_children: true`, `has_toc: false`, `permalink` 필드가 있는지
+3. **README 형식 일관성:** 각 카테고리 README가 front matter + `# 제목` → `## 소개` → `## 목차` 구조를 따르는지
+4. **루트 README ↔ 카테고리 디렉토리 일치:** 루트 목차의 카테고리가 실제 디렉토리로 존재하는지
+5. **"작성 예정" 항목:** 링크 없이 텍스트로만 나열되어 있는지 (AGENTS.md 규칙)
 
 ### Step 4: 자동 수정 실행
 
@@ -99,6 +104,9 @@ unregistered_files: N
 
 #### 미등록 파일 (파일 있지만 목차에 없음)
 - {카테고리/파일명}
+
+#### Front Matter 문제
+- {파일명} — {문제: 누락 필드, parent 불일치, nav_order 중복 등}
 
 #### 파일명 컨벤션 위반
 - {파일명} — {문제}

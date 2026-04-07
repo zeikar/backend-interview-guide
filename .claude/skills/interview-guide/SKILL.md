@@ -70,6 +70,7 @@ Agent(
 7. {카테고리}/README.md에 새 문서 링크를 추가하라
 
 ## 품질 기대치
+- YAML front matter 필수 (title, description, parent, nav_order)
 - 면접에서 '왜?'라는 후속 질문에 답할 수 있는 깊이
 - 모든 기술/패턴에 트레이드오프 포함
 - 기존 문서와 동일한 구조/문체

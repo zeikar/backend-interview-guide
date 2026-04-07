@@ -9,6 +9,7 @@ This repository is a Korean backend interview guide organized as Markdown conten
 - Preserve the existing category structure and Markdown style.
 - Keep each category `README.md` as the index for documents in that directory.
 - Do not add broken links to README files. If a topic is not written yet, list it as planned instead of linking a missing file.
+- Every content `.md` file must start with YAML front matter (`title`, `description`, `parent`, `nav_order`). Category READMEs additionally require `has_children`, `has_toc`, and `permalink`. See `style-guide.md` for the full template.
 - Prefer the repo-local checker at `scripts/check_markdown_links.py` after markdown edits that touch headings, anchors, or links.
 
 ## Writing Tips
@@ -29,6 +30,8 @@ Agents and skills must not hardcode category names (`database`, `cloud`, etc.). 
 3. Use `Glob("*/README.md")` to find category directories (exclude `.claude/`, `_workspace/`, `scripts/`)
 
 This ensures the harness works correctly when categories are added, renamed, or removed.
+
+When scanning multiple documents (listing, comparing, or validating), read only the front matter first (`Read` with `limit: 10`) instead of loading entire files. Full reads are only needed when reviewing or editing the body content.
 
 ## Category Boundary Rules
 

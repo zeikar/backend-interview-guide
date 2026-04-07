@@ -6,11 +6,51 @@
 
 ## 목차
 
-1. [제목 패턴](#제목-패턴)
-2. [목차 패턴](#목차-패턴)
-3. [설명 패턴](#설명-패턴)
-4. [비교표 패턴](#비교표-패턴)
-5. [코드 예시 패턴](#코드-예시-패턴)
+1. [Front Matter 패턴](#front-matter-패턴)
+2. [제목 패턴](#제목-패턴)
+3. [목차 패턴](#목차-패턴)
+4. [설명 패턴](#설명-패턴)
+5. [비교표 패턴](#비교표-패턴)
+6. [코드 예시 패턴](#코드-예시-패턴)
+
+---
+
+## Front Matter 패턴
+
+모든 콘텐츠 마크다운 파일은 YAML front matter로 시작한다. Jekyll/Just the Docs 빌드에 사용되며 생략하면 사이트에서 올바르게 표시되지 않는다.
+
+### 콘텐츠 문서 (예: `database/caching.md`)
+
+```yaml
+---
+title: 캐싱 (Caching)
+description: 캐싱 전략, TTL, 무효화, 캐시 스탬피드 등 실무에서 자주 부딪히는 핵심 포인트를 다룹니다.
+parent: 데이터베이스
+nav_order: 11
+---
+```
+
+| 필드 | 설명 |
+|------|------|
+| `title` | 문서 제목. h1과 동일하게 `한국어 (English)` 형식 |
+| `description` | 1~2문장 요약. 직접적인 톤으로 작성 |
+| `parent` | 소속 카테고리의 `title` 값 (한국어). 카테고리 README의 `title`과 정확히 일치해야 한다 |
+| `nav_order` | 카테고리 내 정렬 순서 (정수). 기존 문서의 nav_order를 확인하고 중복 없이 부여 |
+
+### 카테고리 README (예: `database/README.md`)
+
+```yaml
+---
+title: 데이터베이스
+description: 데이터 모델링, 트랜잭션, 캐싱, NoSQL, 최적화까지 백엔드 데이터베이스 핵심 주제를 정리했습니다.
+nav_order: 1
+has_children: true
+has_toc: false
+permalink: /database/
+---
+```
+
+카테고리 README에는 `has_children: true`, `has_toc: false`, `permalink` 필드가 추가된다. 새 카테고리 생성 시 기존 카테고리 README의 front matter를 참고한다.
 
 ---
 
