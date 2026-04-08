@@ -2,7 +2,7 @@
 title: 네트워크 I/O와 이벤트 루프 (Network I/O and Event Loop)
 description: 논블로킹 I/O, 이벤트 루프, 백프레셔 등 네트워크 처리 핵심을 다룹니다.
 parent: 프로그래밍
-nav_order: 9
+nav_order: 10
 ---
 
 # 네트워크 I/O와 이벤트 루프 (Network I/O and Event Loop)
@@ -37,6 +37,7 @@ nav_order: 9
 **I/O가 많은 서버를 어떤 실행 모델로 다룰지 설명할 수 있는가**입니다.
 
 관련 일반론은 [동시성 (Concurrency)](concurrency.md), 언어별 예시는 [JavaScript](javascript.md), [Python](python.md) 문서와 연결해서 보면 좋습니다.
+응답 포맷 선택과 직렬화 비용은 [직렬화 (Serialization)](serialization.md) 문서와 함께 보면 더 직접적입니다.
 
 ---
 

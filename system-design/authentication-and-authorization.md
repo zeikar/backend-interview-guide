@@ -2,7 +2,7 @@
 title: 인증과 인가 (Authentication & Authorization)
 description: 세션과 토큰의 차이, 권한 판단 위치 등 인증·인가 핵심을 다룹니다.
 parent: 시스템 디자인
-nav_order: 8
+nav_order: 9
 ---
 
 # 인증과 인가 (Authentication & Authorization)

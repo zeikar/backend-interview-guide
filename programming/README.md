@@ -24,6 +24,7 @@ permalink: /programming/
 - [동시성 (Concurrency)](concurrency.md)
 - [테스트와 품질 (Testing & Quality)](testing-quality.md)
 - [메모리와 실행 모델 (Memory & Execution Model)](memory-execution-model.md)
+- [직렬화 (Serialization)](serialization.md)
 - [네트워크 I/O와 이벤트 루프 (Network I/O and Event Loop)](network-io-and-event-loop.md)
 - [에러 처리와 디버깅 (Error Handling and Debugging)](error-handling-and-debugging.md)
 - [LeetCode 문제 풀이](https://zeikar.github.io/leetcode/)

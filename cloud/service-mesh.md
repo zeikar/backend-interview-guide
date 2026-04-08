@@ -27,6 +27,8 @@ nav_order: 15
 
 핵심은 "서비스를 연결하는 코드"를 각 서비스에 흩뿌리지 않고, **통신 정책을 플랫폼 차원에서 일관되게 적용하는 것**입니다.
 
+이 문서는 **그 정책을 어디에 올려둘지**에 집중합니다. timeout, retry, circuit breaker 자체의 일반 원칙은 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](../system-design/resilience-patterns.md) 문서가 더 직접적인 기준 문서입니다.
+
 ---
 
 ## 왜 서비스 메시를 쓰는가

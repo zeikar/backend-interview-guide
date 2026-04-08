@@ -42,6 +42,7 @@ nav_order: 17
 배포 자동화 관점은 [배포 전략과 CI/CD (Deployment Strategies and CI/CD)](ci-cd-and-deployment.md),  
 멱등성 일반론은 [분산 데이터 처리 (Distributed Data Processing)](../database/distributed-data-processing.md) 문서와 같이 보면 좋습니다.
 HTTP API, 워커, 메시지 소비자에서 재시도를 어디에 둘지와 `Idempotency-Key` 일반론은 [멱등성과 재시도 (Idempotency and Retry)](../system-design/idempotency-and-retry.md) 문서와 같이 보면 연결이 좋습니다.
+timeout, retry, circuit breaker를 한 세트의 복원력 패턴으로 설명하려면 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](../system-design/resilience-patterns.md) 문서와 함께 보면 좋습니다.
 
 ---
 
@@ -152,6 +153,8 @@ queue worker는 작업을 메시지나 큐로 받아 처리합니다.
 
 면접에서는 "실패하면 다시 시도합니다"보다  
 **어떤 오류만 재시도하고, 얼마나 기다리고, 언제 포기할지**를 말하는 편이 더 좋습니다.
+
+이 문서에서는 워크플로우 운영 위치에 집중하고, backoff, jitter, circuit breaker의 일반론은 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](../system-design/resilience-patterns.md) 문서로 연결하면 좋습니다.
 
 ---
 

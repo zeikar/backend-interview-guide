@@ -2,7 +2,7 @@
 title: 분산 시스템 (Distributed Systems)
 description: 장애 모델, 일관성, 합의 등 분산 시스템 면접 핵심 개념을 다룹니다.
 parent: 시스템 디자인
-nav_order: 12
+nav_order: 13
 ---
 
 # 분산 시스템 (Distributed Systems)
@@ -60,6 +60,8 @@ nav_order: 12
 - **부분 실패 격리**
 
 면접에서 이 부분을 짚어주면 답변이 훨씬 실무적으로 보입니다.
+
+timeout budget, retry 위치, circuit breaker 같은 복원력 일반론은 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](resilience-patterns.md) 문서가 더 직접적입니다. 여기서는 **왜 이런 패턴이 분산 시스템에서 필수 전제가 되는지**에 집중하면 좋습니다.
 
 ---
 

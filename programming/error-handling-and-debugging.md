@@ -2,7 +2,7 @@
 title: 에러 처리와 디버깅 (Error Handling and Debugging)
 description: 예외 처리 전략, 장애 분석, 디버깅 접근법을 면접 관점에서 다룹니다.
 parent: 프로그래밍
-nav_order: 10
+nav_order: 11
 ---
 
 # 에러 처리와 디버깅 (Error Handling and Debugging)
@@ -98,7 +98,8 @@ nav_order: 10
 
 ## 재시도, 타임아웃, 실패 전파
 
-에러 처리 답변이 실무적으로 들리려면 실패 전파 전략까지 같이 나와야 합니다.
+에러 처리 답변이 실무적으로 들리려면 실패 전파 전략까지 같이 나와야 합니다.  
+다만 이 문서는 **애플리케이션 코드에서 예외를 어떤 의미로 감싸고 어디서 끊을지**에 집중합니다. retry 위치, timeout budget, circuit breaker 같은 분산 시스템 복원력 일반론은 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](../system-design/resilience-patterns.md) 문서가 더 직접적입니다.
 
 ### 재시도 (Retry)
 
@@ -109,10 +110,9 @@ nav_order: 10
 
 재시도는 보통 다음과 함께 설명하면 좋습니다.
 
-- exponential backoff
-- jitter
 - 최대 재시도 횟수
-- idempotency
+- 멱등성 보장 여부
+- 재시도 대상 오류 구분
 
 ### 타임아웃
 
@@ -124,6 +124,8 @@ nav_order: 10
 
 타임아웃이 없으면 일부 느린 의존성 때문에 워커와 연결이 계속 묶일 수 있습니다.
 
+좋은 답변은 모든 값을 외우는 것보다 **서비스 경계마다 기다림의 상한을 둔다**는 원칙을 설명하는 편이 좋습니다.
+
 ### 실패 전파
 
 모든 에러를 최상위에서만 처리하면 원인 파악이 어렵고,  
@@ -133,6 +135,8 @@ nav_order: 10
 
 - **하위 계층:** 원인 보존, 필요한 래핑, 리소스 정리
 - **상위 계층:** 사용자 응답 변환, retry/fallback 여부 결정, 로깅
+
+즉, 이 문서에서는 에러의 **의미와 전파 책임**을 설명하고, backoff, jitter, circuit breaker는 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](../system-design/resilience-patterns.md) 문서로 넘기는 편이 좋습니다.
 
 ---
 

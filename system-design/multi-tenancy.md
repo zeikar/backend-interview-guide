@@ -2,7 +2,7 @@
 title: 멀티 테넌시 (Multi-Tenancy)
 description: 격리 수준, 비용, 운영 복잡도 사이의 멀티 테넌시 설계 트레이드오프를 다룹니다.
 parent: 시스템 디자인
-nav_order: 10
+nav_order: 11
 ---
 
 # 멀티 테넌시 (Multi-Tenancy)
@@ -175,6 +175,8 @@ tenant별로 데이터베이스를 분리하는 방식입니다.
 - 워크로드별 큐 분리
 
 좋은 답변은 "공유하되, 항상 동일하게 대우하지는 않는다"는 감각을 가지면 좋습니다.
+
+이때 tenant별 quota와 속도 제한을 어떻게 나눌지는 [레이트 리미팅 (Rate Limiting)](rate-limiting.md) 문서와 연결해서 설명하면 더 자연스럽습니다.
 
 ---
 

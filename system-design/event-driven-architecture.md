@@ -2,7 +2,7 @@
 title: 메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)
 description: 비동기 흐름, 데이터 일관성 등 이벤트 기반 아키텍처의 장단점을 살펴봅니다.
 parent: 시스템 디자인
-nav_order: 13
+nav_order: 16
 ---
 
 # 메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)

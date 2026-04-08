@@ -170,6 +170,8 @@ nav_order: 6
 - **페일오버:** 정상 자원으로 자동 전환
 - **런북:** 수동 개입이 필요할 때 절차를 표준화
 
+여기서 timeout, retry, circuit breaker 자체의 일반 설계 원칙은 [복원력 패턴 (Timeout, Retry, Circuit Breaker)](resilience-patterns.md) 문서가 더 직접적인 심화 자료입니다. 이 문서에서는 **그 패턴들을 고가용성 목표와 복구 전략에 어떻게 연결할지**에 집중하는 편이 좋습니다.
+
 운영 목표를 설명할 때는 다음 개념도 자주 나옵니다.
 
 - **RTO (Recovery Time Objective):** 복구에 허용되는 최대 시간
