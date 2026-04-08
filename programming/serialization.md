@@ -15,6 +15,7 @@ nav_order: 9
 - [Text와 Binary 포맷](#text와-binary-포맷)
 - [JSON, Protocol Buffers, Avro 비교](#json-protocol-buffers-avro-비교)
 - [Schema Evolution과 호환성](#schema-evolution과-호환성)
+- [간단한 호환성 예시](#간단한-호환성-예시)
 - [Precision, Default, Null 함정](#precision-default-null-함정)
 - [Payload 크기와 CPU 비용](#payload-크기와-cpu-비용)
 - [역직렬화 보안 주의점](#역직렬화-보안-주의점)
@@ -110,6 +111,8 @@ JSON은 RFC 8259에서 정의된 텍스트 기반 포맷입니다.[^rfc8259]
 | 호환성 관리 | 애플리케이션 규칙에 의존 | 필드 번호와 스키마 규칙 중요 | writer/reader schema 해석이 중요 |
 | 잘 맞는 경우 | 공개 API, 범용 웹 생태계 | 내부 RPC, 다중 언어 서비스 계약 | 이벤트 스트리밍, 데이터 파이프라인 |
 
+MessagePack이나 CBOR 같은 포맷은 **JSON보다 더 작은 binary 표현이 필요하지만, Protobuf/Avro만큼 강한 스키마 관리까지는 원하지 않을 때** 대안이 될 수 있습니다. 즉, 이들은 schema-less 또는 schema-light한 binary 포맷이라는 위치로 이해하면 충분합니다.
+
 ### JSON
 
 - **장점:** 사람이 읽기 쉽고 도구 지원이 넓습니다.
@@ -149,6 +152,27 @@ Avro는 writer schema와 reader schema의 해석 규칙을 통해 schema resolut
 
 좋은 답변은 "필드 추가는 쉽다"보다  
 **어떤 변경이 하위 호환인지, 기본값과 presence가 어떻게 동작하는지**를 설명하는 답변입니다.
+
+---
+
+## 간단한 호환성 예시
+
+면접에서는 추상 설명만 하기보다 아주 짧은 예시를 같이 말하면 답변이 더 강해집니다.
+
+```proto
+message UserProfile {
+  string user_id = 1;
+  optional string nickname = 2;
+}
+```
+
+이후 새 버전에서 `nickname`을 추가했다고 가정하면:
+
+- **새 서버 -> 옛 클라이언트:** 옛 클라이언트는 모르는 필드를 무시할 수 있어 비교적 안전
+- **옛 서버 -> 새 클라이언트:** 새 클라이언트는 `nickname`이 없을 수 있음을 처리해야 함
+- **주의점:** `2`번 필드를 다른 의미로 재사용하면 호환성이 깨질 수 있음
+
+JSON에서도 비슷한 상황은 생기지만, 보통은 필드 존재 여부와 null 의미를 애플리케이션 규칙으로 더 많이 관리하게 됩니다.
 
 ---
 
