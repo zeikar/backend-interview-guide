@@ -160,6 +160,12 @@ Avro는 writer schema와 reader schema의 해석 규칙을 통해 schema resolut
 면접에서는 추상 설명만 하기보다 아주 짧은 예시를 같이 말하면 답변이 더 강해집니다.
 
 ```proto
+// v1
+message UserProfile {
+  string user_id = 1;
+}
+
+// v2
 message UserProfile {
   string user_id = 1;
   optional string nickname = 2;

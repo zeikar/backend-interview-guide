@@ -108,7 +108,7 @@ HTTP에는 메서드 자체의 멱등성이 있습니다. RFC 9110은 `PUT`, `DE
 
 - `PUT /orders/123` 처럼 리소스를 덮어쓰는 요청은 메서드 의미상 멱등하게 설계할 수 있습니다.
 - `POST /orders` 처럼 새 리소스를 생성하는 요청은 기본적으로 멱등하지 않습니다.
-- 다만 `POST` 이더라도 `Idempotency-Key`를 붙여 서버가 같은 작업으로 인식하게 만들면 실무에서는 재시도 가능한 API로 만들 수 있습니다.[^stripe-idempotency]
+- 다만 `POST` 이더라도 `Idempotency-Key`를 붙여 서버가 같은 작업으로 인식하게 만들면 실무에서는 재시도 가능한 API로 만들 수 있습니다.[^stripe-idempotency][^ietf-idempotency-key]
 
 | **구분** | **의미** | **예시** |
 | --- | --- | --- |
