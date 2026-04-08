@@ -82,6 +82,9 @@ nav_order: 13
 - **적합한 경우:** 로그 수집, CDC, 실시간 분석, 이벤트 소싱
 - **핵심 포인트:** 메시지 단순 전달보다 "이벤트 로그 보존과 재소비"에 강합니다.
 
+이 문서는 메시징 패턴의 큰 그림에 집중합니다.  
+window, watermark, stateful processing, Spark/Flink 비교처럼 "이벤트를 받아 실제 계산을 지속적으로 수행하는 모델"은 [스트림 처리 (Stream Processing)](stream-processing.md) 문서와 같이 보면 경계가 더 분명합니다.
+
 ---
 
 ## 브로커 기반과 스트리밍 기반의 차이

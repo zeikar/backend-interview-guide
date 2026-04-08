@@ -2,7 +2,7 @@
 title: NoSQL 데이터베이스 (NoSQL Databases)
 description: NoSQL 계열의 종류, 장단점, 언제 관계형 데이터베이스 대신 고려할지 핵심 포인트를 정리했습니다.
 parent: 데이터베이스
-nav_order: 13
+nav_order: 14
 ---
 
 # NoSQL 데이터베이스 (NoSQL Databases)

@@ -2,7 +2,7 @@
 title: 데이터베이스 트랜잭션과 일관성 (Database Transactions and Consistency)
 description: 트랜잭션, ACID, 격리 수준, 읽기 이상 현상을 설명할 때 핵심이 되는 포인트를 정리했습니다.
 parent: 데이터베이스
-nav_order: 10
+nav_order: 11
 ---
 
 # 데이터베이스 트랜잭션과 일관성 (Database Transactions and Consistency)

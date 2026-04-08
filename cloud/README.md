@@ -33,3 +33,5 @@ permalink: /cloud/
   - [서비스 메시 (Service Mesh)](service-mesh.md)
   - [로깅 및 모니터링 (Logging & Monitoring)](logging-monitoring.md)
 - [잡 스케줄링과 워크플로우 (Job Scheduling & Workflows)](job-scheduling-and-workflows.md)
+- [하둡 생태계 (Hadoop Ecosystem)](hadoop-ecosystem.md)
+- [스트림 처리 (Stream Processing)](stream-processing.md)

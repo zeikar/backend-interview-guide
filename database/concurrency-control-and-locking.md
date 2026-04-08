@@ -2,7 +2,7 @@
 title: 데이터베이스 동시성 제어와 락 (Concurrency Control and Locking)
 description: 동시성 제어, 잠금 전략, 데드락, 중복 방지 패턴을 데이터베이스 면접 관점에서 정리했습니다.
 parent: 데이터베이스
-nav_order: 16
+nav_order: 17
 ---
 
 # 데이터베이스 동시성 제어와 락 (Concurrency Control and Locking)

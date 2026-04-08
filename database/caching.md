@@ -2,7 +2,7 @@
 title: 캐싱 (Caching)
 description: 캐싱 전략, TTL, 무효화, 캐시 스탬피드 등 실무에서 자주 부딪히는 핵심 포인트를 다룹니다.
 parent: 데이터베이스
-nav_order: 11
+nav_order: 12
 ---
 
 # 캐싱 (Caching)

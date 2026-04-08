@@ -2,7 +2,7 @@
 title: RDBMS와 SQL (RDBMS and SQL)
 description: RDBMS와 SQL의 기본 개념, 관계 모델, 쿼리 사고방식의 핵심 포인트를 정리했습니다.
 parent: 데이터베이스
-nav_order: 7
+nav_order: 8
 ---
 
 # RDBMS와 SQL (RDBMS and SQL)

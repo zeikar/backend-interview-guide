@@ -20,6 +20,7 @@ permalink: /database/
 - [검색과 인덱싱 (Search & Indexing)](search-and-indexing.md)
 - [백업과 복구 (Backup & Recovery)](backup-and-recovery.md)
 - [분산 데이터 처리 (Distributed Data Processing)](distributed-data-processing.md)
+- [OLTP와 OLAP (OLTP vs OLAP)](oltp-vs-olap.md)
 - [PostgreSQL / MySQL](postgresql-mysql.md)
 - [RDBMS와 SQL](sql-and-rdbms.md)
 - [데이터베이스 스케일링](scaling.md)

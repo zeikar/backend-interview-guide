@@ -2,7 +2,7 @@
 title: PostgreSQL / MySQL
 description: PostgreSQL과 MySQL의 차이, 강점, 운영 관점의 선택 포인트를 비교해 정리했습니다.
 parent: 데이터베이스
-nav_order: 6
+nav_order: 7
 ---
 
 # PostgreSQL / MySQL

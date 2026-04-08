@@ -2,7 +2,7 @@
 title: MongoDB
 description: MongoDB의 문서 모델, 인덱스, 운영 특성을 백엔드 면접 관점에서 살펴봅니다.
 parent: 데이터베이스
-nav_order: 15
+nav_order: 16
 ---
 
 # MongoDB

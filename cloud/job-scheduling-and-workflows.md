@@ -96,6 +96,10 @@ batch job은 보통 큰 데이터 집합을 한 번에 처리하는 작업입니
 
 이 경우에는 실행 시간, 처리량, 재시작 가능성까지 같이 봐야 합니다.
 
+데이터 플랫폼 관점에서 batch job을 더 넓게 설명하려면  
+[하둡 생태계 (Hadoop Ecosystem)](hadoop-ecosystem.md) 문서와 연결해 분산 저장/실행 계층을 같이 말할 수 있고,  
+실시간 집계와 event time, watermark까지 가면 [스트림 처리 (Stream Processing)](stream-processing.md) 문서와 이어집니다.
+
 ### Queue Worker
 
 queue worker는 작업을 메시지나 큐로 받아 처리합니다.
