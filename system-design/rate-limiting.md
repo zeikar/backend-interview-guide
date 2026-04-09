@@ -2,7 +2,7 @@
 title: 레이트 리미팅 (Rate Limiting)
 description: 제한 기준, 알고리즘, 429 응답, 분산 집행 위치까지 레이트 리미팅 설계의 핵심을 다룹니다.
 parent: 시스템 디자인
-nav_order: 8
+nav_order: 11
 ---
 
 # 레이트 리미팅 (Rate Limiting)

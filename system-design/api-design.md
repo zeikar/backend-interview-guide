@@ -2,7 +2,7 @@
 title: API 설계 (API Design)
 description: 리소스 모델링, 버전 전략, 오류 응답 등 API 설계 원칙을 다룹니다.
 parent: 시스템 디자인
-nav_order: 7
+nav_order: 10
 ---
 
 # API 설계 (API Design)

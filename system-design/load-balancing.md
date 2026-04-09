@@ -2,7 +2,7 @@
 title: 로드 밸런싱 (Load Balancing)
 description: L4/L7 차이, 알고리즘 선택, 장애 대응 등 로드 밸런싱 핵심을 다룹니다.
 parent: 시스템 디자인
-nav_order: 5
+nav_order: 8
 ---
 
 # 로드 밸런싱 (Load Balancing)

@@ -2,7 +2,7 @@
 title: 멱등성과 재시도 (Idempotency and Retry)
 description: 재시도가 안전해지기 위해 필요한 멱등성, idempotency key, duplicate handling을 정리합니다.
 parent: 시스템 디자인
-nav_order: 15
+nav_order: 18
 ---
 
 # 멱등성과 재시도 (Idempotency and Retry)

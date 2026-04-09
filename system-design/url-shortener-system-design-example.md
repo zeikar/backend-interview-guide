@@ -2,7 +2,7 @@
 title: URL 단축기 시스템 설계 예시 (URL Shortener System Design Example)
 description: URL 단축기 문제를 기준으로 요구사항 정리, 규모 추정, 트레이드오프 설명 흐름을 보여줍니다.
 parent: 시스템 디자인
-nav_order: 19
+nav_order: 3
 ---
 
 # URL 단축기 시스템 설계 예시 (URL Shortener System Design Example)

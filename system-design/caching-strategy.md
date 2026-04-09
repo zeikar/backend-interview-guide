@@ -2,7 +2,7 @@
 title: 캐싱 전략 (Caching Strategy)
 description: 어떤 데이터를 어디에 캐시하고, 어떤 트레이드오프를 함께 설명해야 하는지 다룹니다.
 parent: 시스템 디자인
-nav_order: 4
+nav_order: 7
 ---
 
 # 캐싱 전략 (Caching Strategy)

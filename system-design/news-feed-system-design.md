@@ -2,7 +2,7 @@
 title: 뉴스 피드 시스템 설계 예시 (News Feed System Design Example)
 description: 뉴스 피드 문제를 기준으로 fan-out, 타임라인 저장, 캐시, celebrity 대응을 어떻게 설명할지 다룹니다.
 parent: 시스템 디자인
-nav_order: 20
+nav_order: 4
 ---
 
 # 뉴스 피드 시스템 설계 예시 (News Feed System Design Example)

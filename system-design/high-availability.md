@@ -2,7 +2,7 @@
 title: 고가용성 (High Availability)
 description: SPOF 제거, 복제, failover 등 고가용성 설계의 핵심을 다룹니다.
 parent: 시스템 디자인
-nav_order: 6
+nav_order: 9
 ---
 
 # 고가용성 (High Availability)

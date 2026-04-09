@@ -2,7 +2,7 @@
 title: 분산 시스템 (Distributed Systems)
 description: 장애 모델, 일관성, 합의 등 분산 시스템 면접 핵심 개념을 다룹니다.
 parent: 시스템 디자인
-nav_order: 13
+nav_order: 16
 ---
 
 # 분산 시스템 (Distributed Systems)

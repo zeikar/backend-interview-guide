@@ -2,7 +2,7 @@
 title: 복원력 패턴 (Timeout, Retry, Circuit Breaker)
 description: 부분 실패를 전제로 timeout, retry, backoff, circuit breaker를 어떻게 설계할지 다룹니다.
 parent: 시스템 디자인
-nav_order: 14
+nav_order: 17
 ---
 
 # 복원력 패턴 (Timeout, Retry, Circuit Breaker)

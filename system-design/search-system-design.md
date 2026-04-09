@@ -2,7 +2,7 @@
 title: 검색 시스템 설계 예시 (Search System Design Example)
 description: 검색 문제를 기준으로 색인 파이프라인, inverted index, shard와 replica, 최신성을 어떻게 설명할지 다룹니다.
 parent: 시스템 디자인
-nav_order: 21
+nav_order: 5
 ---
 
 # 검색 시스템 설계 예시 (Search System Design Example)

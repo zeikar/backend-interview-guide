@@ -2,7 +2,7 @@
 title: 보안 설계 (Security Design)
 description: 인증, 권한, 비밀 관리, 네트워크 통제 등 보안 설계 핵심을 다룹니다.
 parent: 시스템 디자인
-nav_order: 17
+nav_order: 20
 ---
 
 # 보안 설계 (Security Design)
