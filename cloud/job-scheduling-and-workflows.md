@@ -257,6 +257,6 @@ queue worker는 작업을 메시지나 큐로 받아 처리합니다.
 
 ## 참고 자료
 
-[^temporal]: Temporal Docs, What is Temporal? - https://docs.temporal.io/temporal
-[^airflow]: Apache Airflow Documentation - https://airflow.apache.org/docs/
-[^aws-step-functions]: AWS Documentation, What is AWS Step Functions? - https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html
+[^temporal]: [Temporal Docs, What is Temporal?](https://docs.temporal.io/temporal)
+[^airflow]: [Apache Airflow Documentation](https://airflow.apache.org/docs/)
+[^aws-step-functions]: [AWS Documentation, What is AWS Step Functions?](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)

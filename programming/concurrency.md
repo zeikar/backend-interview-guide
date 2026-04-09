@@ -226,5 +226,5 @@ func main() {
 
 ## 참고 자료
 
-- Go Memory Model - https://go.dev/ref/mem
-- Java Tutorials, Concurrency - https://docs.oracle.com/javase/tutorial/essential/concurrency/
+- [Go Memory Model](https://go.dev/ref/mem)
+- [Java Tutorials, Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/)

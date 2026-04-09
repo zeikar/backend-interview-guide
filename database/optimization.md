@@ -194,6 +194,6 @@ ON orders (user_id, status, created_at DESC);
 
 ## 참고 자료
 
-[^postgres-explain]: PostgreSQL Docs, "Using EXPLAIN" - https://www.postgresql.org/docs/current/using-explain.html
-[^postgres-multicolumn]: PostgreSQL Docs, "Multicolumn Indexes" - https://www.postgresql.org/docs/current/indexes-multicolumn.html
-[^postgres-partitioning]: PostgreSQL Docs, "Table Partitioning" - https://www.postgresql.org/docs/current/ddl-partitioning.html
+[^postgres-explain]: [PostgreSQL Docs, "Using EXPLAIN"](https://www.postgresql.org/docs/current/using-explain.html)
+[^postgres-multicolumn]: [PostgreSQL Docs, "Multicolumn Indexes"](https://www.postgresql.org/docs/current/indexes-multicolumn.html)
+[^postgres-partitioning]: [PostgreSQL Docs, "Table Partitioning"](https://www.postgresql.org/docs/current/ddl-partitioning.html)

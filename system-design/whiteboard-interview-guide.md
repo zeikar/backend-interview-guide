@@ -237,5 +237,5 @@ Client
 
 ## 참고 자료
 
-- System Design Primer - https://github.com/donnemartin/system-design-primer
-- ByteByteGo Blog, A Guide to System Design Interviews - https://blog.bytebytego.com/p/a-guide-to-system-design-interviews
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [ByteByteGo Blog, A Guide to System Design Interviews](https://blog.bytebytego.com/p/a-guide-to-system-design-interviews)

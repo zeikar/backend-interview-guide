@@ -223,8 +223,8 @@ Kafka를 설명할 때 `at-most-once`, `at-least-once`, `exactly-once`를 구분
 
 ## 참고 자료
 
-[^kafka-design]: Apache Kafka Docs, "Design" - https://kafka.apache.org/41/design/design/
-[^kafka-producer]: Apache Kafka Docs, "Producer Configs" - https://kafka.apache.org/41/configuration/producer-configs/
-[^kafka-consumer]: Apache Kafka Javadoc, `KafkaConsumer` - https://kafka.apache.org/41/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
-[^kafka-rebalance]: Apache Kafka Docs, "Consumer Rebalance Protocol" - https://kafka.apache.org/42/operations/consumer-rebalance-protocol/
-[^kafka-broker]: Apache Kafka Docs, "Broker Configs" - https://kafka.apache.org/41/configuration/broker-configs/
+[^kafka-design]: [Apache Kafka Docs, "Design"](https://kafka.apache.org/41/design/design/)
+[^kafka-producer]: [Apache Kafka Docs, "Producer Configs"](https://kafka.apache.org/41/configuration/producer-configs/)
+[^kafka-consumer]: [Apache Kafka Javadoc, `KafkaConsumer`](https://kafka.apache.org/41/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+[^kafka-rebalance]: [Apache Kafka Docs, "Consumer Rebalance Protocol"](https://kafka.apache.org/42/operations/consumer-rebalance-protocol/)
+[^kafka-broker]: [Apache Kafka Docs, "Broker Configs"](https://kafka.apache.org/41/configuration/broker-configs/)

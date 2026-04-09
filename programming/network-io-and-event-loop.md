@@ -232,6 +232,6 @@ asyncio.run(main())
 
 ## 참고 자료
 
-[^mdn-event-loop]: MDN Web Docs, "JavaScript execution model" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
-[^python-asyncio]: Python Documentation, "`asyncio` — Asynchronous I/O" - https://docs.python.org/3/library/asyncio.html
-[^python-asyncio-task]: Python Documentation, "Coroutines and Tasks" - https://docs.python.org/3/library/asyncio-task.html
+[^mdn-event-loop]: [MDN Web Docs, "JavaScript execution model"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop)
+[^python-asyncio]: [Python Documentation, "`asyncio` — Asynchronous I/O"](https://docs.python.org/3/library/asyncio.html)
+[^python-asyncio-task]: [Python Documentation, "Coroutines and Tasks"](https://docs.python.org/3/library/asyncio-task.html)

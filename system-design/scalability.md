@@ -236,5 +236,5 @@ nav_order: 6
 
 ## 참고 자료
 
-[^mongodb-sharding]: MongoDB Docs, "Sharding" - https://www.mongodb.com/docs/manual/sharding/
-[^k8s-hpa]: Kubernetes Docs, "Horizontal Pod Autoscaling" - https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/
+[^mongodb-sharding]: [MongoDB Docs, "Sharding"](https://www.mongodb.com/docs/manual/sharding/)
+[^k8s-hpa]: [Kubernetes Docs, "Horizontal Pod Autoscaling"](https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/)

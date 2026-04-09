@@ -117,9 +117,9 @@ Grafana는 여러 데이터 소스를 묶어 대시보드와 알림을 구성하
 
 ## 참고 자료
 
-[^otel-what]: OpenTelemetry Docs, "What is OpenTelemetry?" - https://opentelemetry.io/docs/what-is-opentelemetry/
-[^otel-docs]: OpenTelemetry Documentation - https://opentelemetry.io/docs/
-[^otel-ops]: OpenTelemetry Docs, "Getting started for Ops" - https://opentelemetry.io/docs/getting-started/ops/
-[^otel-logs]: OpenTelemetry Docs, "OpenTelemetry Logging" - https://opentelemetry.io/docs/specs/otel/logs/
-[^otel-context]: OpenTelemetry Docs, "Context propagation" - https://opentelemetry.io/docs/concepts/context-propagation/
-[^promql]: Prometheus Docs, "Querying basics" - https://prometheus.io/docs/prometheus/latest/querying/basics/
+[^otel-what]: [OpenTelemetry Docs, "What is OpenTelemetry?"](https://opentelemetry.io/docs/what-is-opentelemetry/)
+[^otel-docs]: [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
+[^otel-ops]: [OpenTelemetry Docs, "Getting started for Ops"](https://opentelemetry.io/docs/getting-started/ops/)
+[^otel-logs]: [OpenTelemetry Docs, "OpenTelemetry Logging"](https://opentelemetry.io/docs/specs/otel/logs/)
+[^otel-context]: [OpenTelemetry Docs, "Context propagation"](https://opentelemetry.io/docs/concepts/context-propagation/)
+[^promql]: [Prometheus Docs, "Querying basics"](https://prometheus.io/docs/prometheus/latest/querying/basics/)

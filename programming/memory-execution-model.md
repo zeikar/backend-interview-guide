@@ -208,5 +208,5 @@ def load_user_profile(user_id: int) -> dict:
 
 ## 참고 자료
 
-- Python Documentation, `gc` - https://docs.python.org/3/library/gc.html
-- Brendan Gregg, Systems Performance - https://www.brendangregg.com/systems-performance-2nd-edition-book.html
+- [Python Documentation, `gc`](https://docs.python.org/3/library/gc.html)
+- [Brendan Gregg, Systems Performance](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)

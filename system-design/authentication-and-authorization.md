@@ -216,6 +216,6 @@ RBAC는 단순하고 운영이 쉬운 편입니다.
 
 ## 참고 자료
 
-- OWASP Cheat Sheet Series, Authentication Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
-- OWASP Cheat Sheet Series, Authorization Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
-- OpenID Connect Core - https://openid.net/specs/openid-connect-core-1_0.html
+- [OWASP Cheat Sheet Series, Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+- [OWASP Cheat Sheet Series, Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+- [OpenID Connect Core](https://openid.net/specs/openid-connect-core-1_0.html)

@@ -272,7 +272,7 @@ Feature flag는 이 둘을 분리하는 도구입니다.
 
 ## 참고 자료
 
-- Kubernetes Docs, "Deployment" - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
-- AWS Prescriptive Guidance, "Blue/green deployments" - https://docs.aws.amazon.com/prescriptive-guidance/latest/blue-green-deployments/welcome.html
-- AWS Prescriptive Guidance, "Canary deployments" - https://docs.aws.amazon.com/prescriptive-guidance/latest/canary-deployments/welcome.html
-- Google Cloud, "CI/CD" - https://cloud.google.com/solutions/continuous-integration-continuous-delivery
+- [Kubernetes Docs, "Deployment"](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+- [AWS Prescriptive Guidance, "Blue/green deployments"](https://docs.aws.amazon.com/prescriptive-guidance/latest/blue-green-deployments/welcome.html)
+- [AWS Prescriptive Guidance, "Canary deployments"](https://docs.aws.amazon.com/prescriptive-guidance/latest/canary-deployments/welcome.html)
+- [Google Cloud, "CI/CD"](https://cloud.google.com/solutions/continuous-integration-continuous-delivery)

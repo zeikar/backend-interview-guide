@@ -145,5 +145,5 @@ CAP 이론은 네트워크 파티션이 발생했을 때 일관성과 가용성 
 
 ## 참고 자료
 
-[^dynamodb-consistency]: AWS Docs, "DynamoDB read consistency" - https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html
-[^mongodb-read-isolation]: MongoDB Docs, "Read Isolation, Consistency, and Recency" - https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/
+[^dynamodb-consistency]: [AWS Docs, "DynamoDB read consistency"](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html)
+[^mongodb-read-isolation]: [MongoDB Docs, "Read Isolation, Consistency, and Recency"](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/)

@@ -178,6 +178,6 @@ RabbitMQ를 설명할 때 중요한 포인트는 다음입니다.
 
 ## 참고 자료
 
-[^kafka-intro]: Apache Kafka Docs, "Introduction" - https://kafka.apache.org/intro
-[^rabbitmq-reliability]: RabbitMQ Docs, "Reliability Guide" - https://www.rabbitmq.com/docs/reliability
-[^rabbitmq-confirms]: RabbitMQ Docs, "Consumer Acknowledgements and Publisher Confirms" - https://www.rabbitmq.com/docs/4.1/confirms
+[^kafka-intro]: [Apache Kafka Docs, "Introduction"](https://kafka.apache.org/intro)
+[^rabbitmq-reliability]: [RabbitMQ Docs, "Reliability Guide"](https://www.rabbitmq.com/docs/reliability)
+[^rabbitmq-confirms]: [RabbitMQ Docs, "Consumer Acknowledgements and Publisher Confirms"](https://www.rabbitmq.com/docs/4.1/confirms)

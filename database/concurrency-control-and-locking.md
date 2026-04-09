@@ -294,8 +294,8 @@ DB 락은 강력하지만 범위가 한정돼 있습니다.
 
 ## 참고 자료
 
-[^postgres-explicit-locking]: PostgreSQL Docs, "Explicit Locking" - https://www.postgresql.org/docs/current/explicit-locking.html
-[^postgres-select-for-update]: PostgreSQL Docs, "SELECT" - https://www.postgresql.org/docs/current/sql-select.html
-[^postgres-deadlock]: PostgreSQL Docs, "Explicit Locking - Deadlocks" - https://www.postgresql.org/docs/current/explicit-locking.html#LOCKING-DEADLOCKS
-[^mysql-locking-reads]: MySQL 8.4 Reference Manual, "Locking Reads" - https://dev.mysql.com/doc/refman/8.4/en/innodb-locking-reads.html
-[^mysql-deadlocks]: MySQL 8.4 Reference Manual, "Deadlocks in InnoDB" - https://dev.mysql.com/doc/refman/8.4/en/innodb-deadlocks.html
+[^postgres-explicit-locking]: [PostgreSQL Docs, "Explicit Locking"](https://www.postgresql.org/docs/current/explicit-locking.html)
+[^postgres-select-for-update]: [PostgreSQL Docs, "SELECT"](https://www.postgresql.org/docs/current/sql-select.html)
+[^postgres-deadlock]: [PostgreSQL Docs, "Explicit Locking - Deadlocks"](https://www.postgresql.org/docs/current/explicit-locking.html#LOCKING-DEADLOCKS)
+[^mysql-locking-reads]: [MySQL 8.4 Reference Manual, "Locking Reads"](https://dev.mysql.com/doc/refman/8.4/en/innodb-locking-reads.html)
+[^mysql-deadlocks]: [MySQL 8.4 Reference Manual, "Deadlocks in InnoDB"](https://dev.mysql.com/doc/refman/8.4/en/innodb-deadlocks.html)

@@ -155,5 +155,5 @@ HTTP 응답 자체를 캐싱하는 방식입니다.
 
 ## 참고 자료
 
-[^aws-caching-patterns]: AWS, "Caching patterns" - https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/caching-patterns.html
-[^redis-eviction]: Redis Docs, "Key eviction" - https://redis.io/docs/latest/develop/reference/eviction/
+[^aws-caching-patterns]: [AWS, "Caching patterns"](https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/caching-patterns.html)
+[^redis-eviction]: [Redis Docs, "Key eviction"](https://redis.io/docs/latest/develop/reference/eviction/)

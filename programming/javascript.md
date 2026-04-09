@@ -150,9 +150,9 @@ main().catch((error) => {
 
 ## 참고 자료
 
-[^mdn-guide]: MDN Web Docs, "JavaScript Guide" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-[^mdn-closures]: MDN Web Docs, "Closures" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures
-[^mdn-event-loop]: MDN Web Docs, "JavaScript execution model" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
-[^mdn-promise]: MDN Web Docs, "Promise" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-[^mdn-async]: MDN Web Docs, "async function" - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-[^ecma262]: TC39, "ECMAScript Language Specification" - https://tc39.es/ecma262/
+[^mdn-guide]: [MDN Web Docs, "JavaScript Guide"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+[^mdn-closures]: [MDN Web Docs, "Closures"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
+[^mdn-event-loop]: [MDN Web Docs, "JavaScript execution model"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop)
+[^mdn-promise]: [MDN Web Docs, "Promise"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[^mdn-async]: [MDN Web Docs, "async function"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+[^ecma262]: [TC39, "ECMAScript Language Specification"](https://tc39.es/ecma262/)

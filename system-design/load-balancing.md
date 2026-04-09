@@ -200,6 +200,6 @@ nav_order: 8
 
 ## 참고 자료
 
-[^gcp-health-checks]: Google Cloud Docs, "Use health checks" - https://docs.cloud.google.com/load-balancing/docs/health-checks
-[^gcp-lb-policy]: Google Cloud Docs, "Advanced load balancing optimizations" - https://cloud.google.com/load-balancing/docs/service-lb-policy
-[^route53-failover]: Amazon Route 53 Docs, "Creating Amazon Route 53 health checks" - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html
+[^gcp-health-checks]: [Google Cloud Docs, "Use health checks"](https://docs.cloud.google.com/load-balancing/docs/health-checks)
+[^gcp-lb-policy]: [Google Cloud Docs, "Advanced load balancing optimizations"](https://cloud.google.com/load-balancing/docs/service-lb-policy)
+[^route53-failover]: [Amazon Route 53 Docs, "Creating Amazon Route 53 health checks"](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)

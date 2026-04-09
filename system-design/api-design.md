@@ -251,8 +251,8 @@ API Gateway에서 자주 담당하는 역할은 다음과 같습니다.
 
 ## 참고 자료
 
-[^rfc9110]: RFC 9110, "HTTP Semantics" - https://www.rfc-editor.org/rfc/rfc9110
-[^graphql-http]: GraphQL, "Serving over HTTP" - https://graphql.org/learn/serving-over-http/
-[^graphql-schema]: GraphQL, "Schemas and Types" - https://graphql.org/learn/schema/
-[^grpc-intro]: gRPC Docs, "Introduction to gRPC" - https://grpc.io/docs/what-is-grpc/introduction/
-[^grpc-health]: gRPC Docs, "Health Checking" - https://grpc.io/docs/guides/health-checking/
+[^rfc9110]: [RFC 9110, "HTTP Semantics"](https://www.rfc-editor.org/rfc/rfc9110)
+[^graphql-http]: [GraphQL, "Serving over HTTP"](https://graphql.org/learn/serving-over-http/)
+[^graphql-schema]: [GraphQL, "Schemas and Types"](https://graphql.org/learn/schema/)
+[^grpc-intro]: [gRPC Docs, "Introduction to gRPC"](https://grpc.io/docs/what-is-grpc/introduction/)
+[^grpc-health]: [gRPC Docs, "Health Checking"](https://grpc.io/docs/guides/health-checking/)

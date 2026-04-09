@@ -172,5 +172,5 @@ nav_order: 11
 
 ## 참고 자료
 
-[^postgres-iso]: PostgreSQL Docs, "Transaction Isolation" - https://www.postgresql.org/docs/current/transaction-iso.html
-[^mysql-iso]: MySQL Docs, "Transaction Isolation Levels" - https://dev.mysql.com/doc/refman/en/innodb-transaction-isolation-levels.html
+[^postgres-iso]: [PostgreSQL Docs, "Transaction Isolation"](https://www.postgresql.org/docs/current/transaction-iso.html)
+[^mysql-iso]: [MySQL Docs, "Transaction Isolation Levels"](https://dev.mysql.com/doc/refman/en/innodb-transaction-isolation-levels.html)

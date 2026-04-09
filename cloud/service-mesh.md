@@ -125,6 +125,6 @@ nav_order: 15
 
 ## 참고 자료
 
-[^istio-overview]: Istio Docs, "What is Istio?" - https://istio.io/latest/docs/overview/what-is-istio/
-[^linkerd-overview]: Linkerd Docs, "What is a service mesh?" - https://linkerd.io/what-is-a-service-mesh/
-[^envoy-overview]: Envoy Docs, "What is Envoy?" - https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy
+[^istio-overview]: [Istio Docs, "What is Istio?"](https://istio.io/latest/docs/overview/what-is-istio/)
+[^linkerd-overview]: [Linkerd Docs, "What is a service mesh?"](https://linkerd.io/what-is-a-service-mesh/)
+[^envoy-overview]: [Envoy Docs, "What is Envoy?"](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy)

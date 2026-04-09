@@ -181,5 +181,5 @@ def main() -> None:
 
 ## 참고 자료
 
-[^python-asyncio]: Python Documentation, `asyncio` - https://docs.python.org/3/library/asyncio.html
-[^python-threading]: Python Documentation, `threading` - https://docs.python.org/3/library/threading.html
+[^python-asyncio]: [Python Documentation, `asyncio`](https://docs.python.org/3/library/asyncio.html)
+[^python-threading]: [Python Documentation, `threading`](https://docs.python.org/3/library/threading.html)

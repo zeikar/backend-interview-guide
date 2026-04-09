@@ -255,4 +255,4 @@ def handle_request() -> str:
 
 ## 참고 자료
 
-[^python-logging]: Python Documentation, "`logging` — Logging facility for Python" - https://docs.python.org/3/library/logging.html
+[^python-logging]: [Python Documentation, "`logging` — Logging facility for Python"](https://docs.python.org/3/library/logging.html)

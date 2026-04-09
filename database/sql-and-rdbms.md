@@ -268,6 +268,6 @@ RDBMS 운영은 "SQL을 쓸 줄 안다"로 끝나지 않습니다.
 
 ## 참고 자료
 
-[^postgres-explain]: PostgreSQL Docs, "Using EXPLAIN" - https://www.postgresql.org/docs/current/using-explain.html
-[^postgres-indexes]: PostgreSQL Docs, "Indexes" - https://www.postgresql.org/docs/current/indexes.html
-[^mysql-join]: MySQL Docs, "Nested-Loop Join Algorithms" - https://dev.mysql.com/doc/refman/en/nested-loop-joins.html
+[^postgres-explain]: [PostgreSQL Docs, "Using EXPLAIN"](https://www.postgresql.org/docs/current/using-explain.html)
+[^postgres-indexes]: [PostgreSQL Docs, "Indexes"](https://www.postgresql.org/docs/current/indexes.html)
+[^mysql-join]: [MySQL Docs, "Nested-Loop Join Algorithms"](https://dev.mysql.com/doc/refman/en/nested-loop-joins.html)

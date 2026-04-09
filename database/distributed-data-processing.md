@@ -313,6 +313,6 @@ CREATE TABLE processed_events (
 
 ## 참고 자료
 
-- Debezium Docs, "Outbox Event Router" - https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html
-- Debezium Docs, "Change Data Capture" - https://debezium.io/documentation/reference/stable/features.html
-- Microservices.io, "Transactional Outbox" - https://microservices.io/patterns/data/transactional-outbox.html
+- [Debezium Docs, "Outbox Event Router"](https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html)
+- [Debezium Docs, "Change Data Capture"](https://debezium.io/documentation/reference/stable/features.html)
+- [Microservices.io, "Transactional Outbox"](https://microservices.io/patterns/data/transactional-outbox.html)

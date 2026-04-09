@@ -240,6 +240,6 @@ RDBMS 인덱스는 다음 문제에 매우 강합니다.
 
 ## 참고 자료
 
-[^elastic-inverted]: Elasticsearch Guide, Inverted Index - https://www.elastic.co/guide/en/elasticsearch/guide/current/inverted-index.html
-[^elastic-reindex]: Elasticsearch Reference, Reindex API - https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html
-[^opensearch]: OpenSearch Documentation, Search - https://docs.opensearch.org/latest/search-plugins/searching-data/
+[^elastic-inverted]: [Elasticsearch Guide, Inverted Index](https://www.elastic.co/guide/en/elasticsearch/guide/current/inverted-index.html)
+[^elastic-reindex]: [Elasticsearch Reference, Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html)
+[^opensearch]: [OpenSearch Documentation, Search](https://docs.opensearch.org/latest/search-plugins/searching-data/)

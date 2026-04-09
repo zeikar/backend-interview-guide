@@ -300,8 +300,8 @@ Kubernetes 안의 서비스 노출 구조는 [Kubernetes](kubernetes.md) 와 같
 
 ## 참고 자료
 
-[^aws-vpc]: AWS Docs, "What is Amazon VPC?" - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
-[^aws-sg]: AWS Docs, "VPC security groups" - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
-[^aws-nacl]: AWS Docs, "Network ACLs" - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
-[^aws-nat]: AWS Docs, "NAT gateways" - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
-[^aws-privatelink]: AWS Docs, "AWS PrivateLink" - https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html
+[^aws-vpc]: [AWS Docs, "What is Amazon VPC?"](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+[^aws-sg]: [AWS Docs, "VPC security groups"](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+[^aws-nacl]: [AWS Docs, "Network ACLs"](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+[^aws-nat]: [AWS Docs, "NAT gateways"](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
+[^aws-privatelink]: [AWS Docs, "AWS PrivateLink"](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)

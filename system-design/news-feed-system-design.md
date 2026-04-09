@@ -330,6 +330,6 @@ cursor 기반 pagination이 자연스러운 이유는 다음과 같습니다.
 
 ## 참고 자료
 
-[^meta-taobench]: Meta Engineering, "Open-sourcing TAOBench: An end-to-end social network benchmark" - https://engineering.fb.com/2022/09/07/core-infra/taobench/
-[^meta-dragon]: Meta Engineering, "Dragon: A distributed graph query engine" - https://engineering.fb.com/2016/03/18/data-infrastructure/dragon-a-distributed-graph-query-engine/
-[^redis-sorted-sets]: Redis Docs, "Redis sorted sets" - https://redis.io/docs/latest/develop/data-types/sorted-sets/
+[^meta-taobench]: [Meta Engineering, "Open-sourcing TAOBench: An end-to-end social network benchmark"](https://engineering.fb.com/2022/09/07/core-infra/taobench/)
+[^meta-dragon]: [Meta Engineering, "Dragon: A distributed graph query engine"](https://engineering.fb.com/2016/03/18/data-infrastructure/dragon-a-distributed-graph-query-engine/)
+[^redis-sorted-sets]: [Redis Docs, "Redis sorted sets"](https://redis.io/docs/latest/develop/data-types/sorted-sets/)

@@ -274,5 +274,5 @@ for attempt in range(1, max_retries + 1):
 
 ## 참고 자료
 
-[^aws-retry]: AWS Builders Library, "Timeouts, retries, and backoff with jitter" - https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
-[^azure-circuit-breaker]: Microsoft Learn, "Circuit Breaker pattern" - https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker
+[^aws-retry]: [AWS Builders Library, "Timeouts, retries, and backoff with jitter"](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)
+[^azure-circuit-breaker]: [Microsoft Learn, "Circuit Breaker pattern"](https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker)

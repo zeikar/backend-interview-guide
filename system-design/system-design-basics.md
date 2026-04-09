@@ -225,5 +225,5 @@ nav_order: 1
 
 ## 참고 자료
 
-[^gcp-reliability]: Google Cloud Architecture Center, "Building blocks of reliability in Google Cloud" - https://docs.cloud.google.com/architecture/infra-reliability-guide/building-blocks
-[^gcp-regions]: Google Cloud Docs, "Geography and regions" - https://cloud.google.com/compute/docs/regions-zones/zone-virtualization
+[^gcp-reliability]: [Google Cloud Architecture Center, "Building blocks of reliability in Google Cloud"](https://docs.cloud.google.com/architecture/infra-reliability-guide/building-blocks)
+[^gcp-regions]: [Google Cloud Docs, "Geography and regions"](https://cloud.google.com/compute/docs/regions-zones/zone-virtualization)

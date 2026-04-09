@@ -141,8 +141,8 @@ MongoDB를 설명할 때는 다음 흐름이 자연스럽습니다.
 
 ## 참고 자료
 
-[^mongodb-replication]: MongoDB Docs, "Replication" - https://www.mongodb.com/docs/manual/core/replication/
-[^mongodb-sharding]: MongoDB Docs, "Sharding" - https://www.mongodb.com/docs/manual/sharding/
-[^mongodb-causal]: MongoDB Docs, "Causal Consistency and Read and Write Concerns" - https://www.mongodb.com/docs/manual/core/causal-consistency-read-write-concerns/
-[^mongodb-read-isolation]: MongoDB Docs, "Read Isolation, Consistency, and Recency" - https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/
-[^mongodb-lookup]: MongoDB Docs, "$lookup (aggregation stage)" - https://www.mongodb.com/docs/manual/reference/operator/aggregation/lookup/
+[^mongodb-replication]: [MongoDB Docs, "Replication"](https://www.mongodb.com/docs/manual/core/replication/)
+[^mongodb-sharding]: [MongoDB Docs, "Sharding"](https://www.mongodb.com/docs/manual/sharding/)
+[^mongodb-causal]: [MongoDB Docs, "Causal Consistency and Read and Write Concerns"](https://www.mongodb.com/docs/manual/core/causal-consistency-read-write-concerns/)
+[^mongodb-read-isolation]: [MongoDB Docs, "Read Isolation, Consistency, and Recency"](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/)
+[^mongodb-lookup]: [MongoDB Docs, "$lookup (aggregation stage)"](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lookup/)

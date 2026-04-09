@@ -224,5 +224,5 @@ tenant별로 데이터베이스를 분리하는 방식입니다.
 
 ## 참고 자료
 
-- Microsoft Azure Architecture Center, Multitenant solution architecture - https://learn.microsoft.com/azure/architecture/guide/multitenant/overview
-- AWS SaaS Lens - https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/welcome.html
+- [Microsoft Azure Architecture Center, Multitenant solution architecture](https://learn.microsoft.com/azure/architecture/guide/multitenant/overview)
+- [AWS SaaS Lens](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/welcome.html)

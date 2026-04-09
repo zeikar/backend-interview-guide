@@ -245,4 +245,4 @@ function binarySearch(values, target) {
 ## 참고 자료
 
 - Introduction to Algorithms (CLRS)
-- MIT OpenCourseWare, Introduction to Algorithms - https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
+- [MIT OpenCourseWare, Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/)

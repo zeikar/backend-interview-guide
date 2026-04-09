@@ -289,7 +289,7 @@ CI/CD 파이프라인 안의 secret scanning 감각은 [배포 전략과 CI/CD (
 
 ## 참고 자료
 
-- AWS IAM User Guide - https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
-- AWS Well-Architected, Security Pillar - https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html
-- Kubernetes Docs, "Good practices for Kubernetes Secrets" - https://kubernetes.io/docs/concepts/security/secrets-good-practices/
-- OWASP Secrets Management Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [AWS Well-Architected, Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
+- [Kubernetes Docs, "Good practices for Kubernetes Secrets"](https://kubernetes.io/docs/concepts/security/secrets-good-practices/)
+- [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)

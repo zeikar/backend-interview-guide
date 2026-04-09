@@ -194,5 +194,5 @@ nav_order: 15
 
 ## 참고 자료
 
-[^fowler-microservices]: Martin Fowler, "Microservices" - https://www.martinfowler.com/articles/microservices.html
-[^fowler-tradeoffs]: Martin Fowler, "Microservice Trade-Offs" - https://martinfowler.com/articles/microservice-trade-offs.html
+[^fowler-microservices]: [Martin Fowler, "Microservices"](https://www.martinfowler.com/articles/microservices.html)
+[^fowler-tradeoffs]: [Martin Fowler, "Microservice Trade-Offs"](https://martinfowler.com/articles/microservice-trade-offs.html)

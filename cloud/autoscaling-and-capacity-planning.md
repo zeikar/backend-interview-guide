@@ -277,6 +277,6 @@ Edge 계층 관점은 [API Gateway와 Edge 패턴 (API Gateway and Edge Patterns
 
 ## 참고 자료
 
-[^k8s-hpa]: Kubernetes Documentation, Horizontal Pod Autoscaling - https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
-[^k8s-vpa]: Kubernetes Autoscaler, Vertical Pod Autoscaler - https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
-[^k8s-ca]: Kubernetes Documentation, Cluster Autoscaler - https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/
+[^k8s-hpa]: [Kubernetes Documentation, Horizontal Pod Autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+[^k8s-vpa]: [Kubernetes Autoscaler, Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+[^k8s-ca]: [Kubernetes Documentation, Cluster Autoscaler](https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/)

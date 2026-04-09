@@ -125,9 +125,9 @@ nav_order: 2
 
 ## 참고 자료
 
-[^docker-what-is-container]: Docker Docs, "What is a container?" - https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/
-[^docker-what-is-docker]: Docker Docs, "What is Docker?" - https://docs.docker.com/engine/docker-overview/
-[^oci-home]: Open Container Initiative - https://opencontainers.org/
-[^oci-runtime]: OCI Runtime Specification - https://specs.opencontainers.org/runtime-spec/
-[^linux-namespaces]: Linux Kernel Docs, "Namespaces" - https://docs.kernel.org/5.15/admin-guide/namespaces/index.html
-[^linux-cgroups]: Linux Kernel Docs, "Control Groups" - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html
+[^docker-what-is-container]: [Docker Docs, "What is a container?"](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)
+[^docker-what-is-docker]: [Docker Docs, "What is Docker?"](https://docs.docker.com/engine/docker-overview/)
+[^oci-home]: [Open Container Initiative](https://opencontainers.org/)
+[^oci-runtime]: [OCI Runtime Specification](https://specs.opencontainers.org/runtime-spec/)
+[^linux-namespaces]: [Linux Kernel Docs, "Namespaces"](https://docs.kernel.org/5.15/admin-guide/namespaces/index.html)
+[^linux-cgroups]: [Linux Kernel Docs, "Control Groups"](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html)

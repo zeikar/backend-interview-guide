@@ -175,5 +175,5 @@ nav_order: 9
 
 ## 참고 자료
 
-[^aws-rds-read-replica]: AWS Docs, "Working with DB instance read replicas" - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html
-[^mongodb-sharding]: MongoDB Docs, "Sharding" - https://www.mongodb.com/docs/manual/sharding/
+[^aws-rds-read-replica]: [AWS Docs, "Working with DB instance read replicas"](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
+[^mongodb-sharding]: [MongoDB Docs, "Sharding"](https://www.mongodb.com/docs/manual/sharding/)

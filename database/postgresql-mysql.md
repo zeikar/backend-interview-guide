@@ -279,11 +279,11 @@ WHERE deleted_at IS NULL;
 
 ## 참고 자료
 
-[^postgres-transaction-iso]: PostgreSQL Docs, "Transaction Isolation" - https://www.postgresql.org/docs/current/transaction-iso.html
-[^mysql-transaction-iso]: MySQL Docs, "Transaction Isolation Levels" - https://dev.mysql.com/doc/refman/en/innodb-transaction-isolation-levels.html
-[^mysql-innodb-locking]: MySQL Docs, "InnoDB Locking" - https://dev.mysql.com/doc/refman/en/innodb-locking.html
-[^postgres-partial-index]: PostgreSQL Docs, "Partial Indexes" - https://www.postgresql.org/docs/current/indexes-partial.html
-[^postgres-json]: PostgreSQL Docs, "JSON Types" - https://www.postgresql.org/docs/current/datatype-json.html
-[^mysql-json]: MySQL Docs, "The JSON Data Type" - https://dev.mysql.com/doc/refman/en/json.html
-[^postgres-replication]: PostgreSQL Docs, "Log-Shipping Standby Servers" - https://www.postgresql.org/docs/current/warm-standby.html
-[^mysql-replication]: MySQL Docs, "Replication" - https://dev.mysql.com/doc/refman/en/replication.html
+[^postgres-transaction-iso]: [PostgreSQL Docs, "Transaction Isolation"](https://www.postgresql.org/docs/current/transaction-iso.html)
+[^mysql-transaction-iso]: [MySQL Docs, "Transaction Isolation Levels"](https://dev.mysql.com/doc/refman/en/innodb-transaction-isolation-levels.html)
+[^mysql-innodb-locking]: [MySQL Docs, "InnoDB Locking"](https://dev.mysql.com/doc/refman/en/innodb-locking.html)
+[^postgres-partial-index]: [PostgreSQL Docs, "Partial Indexes"](https://www.postgresql.org/docs/current/indexes-partial.html)
+[^postgres-json]: [PostgreSQL Docs, "JSON Types"](https://www.postgresql.org/docs/current/datatype-json.html)
+[^mysql-json]: [MySQL Docs, "The JSON Data Type"](https://dev.mysql.com/doc/refman/en/json.html)
+[^postgres-replication]: [PostgreSQL Docs, "Log-Shipping Standby Servers"](https://www.postgresql.org/docs/current/warm-standby.html)
+[^mysql-replication]: [MySQL Docs, "Replication"](https://dev.mysql.com/doc/refman/en/replication.html)

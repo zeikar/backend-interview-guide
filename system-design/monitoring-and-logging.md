@@ -193,6 +193,6 @@ Prometheus, Grafana, OpenTelemetry, Loki 같은 구현·운영 상세는 [로깅
 
 ## 참고 자료
 
-[^otel-overview]: OpenTelemetry Docs, "What is OpenTelemetry?" - https://opentelemetry.io/docs/what-is-opentelemetry/
-[^otel-context]: OpenTelemetry Docs, "Context propagation" - https://opentelemetry.io/docs/concepts/context-propagation/
-[^sre-slos]: Google SRE Workbook, "Alerting on SLOs" - https://sre.google/workbook/alerting-on-slos/
+[^otel-overview]: [OpenTelemetry Docs, "What is OpenTelemetry?"](https://opentelemetry.io/docs/what-is-opentelemetry/)
+[^otel-context]: [OpenTelemetry Docs, "Context propagation"](https://opentelemetry.io/docs/concepts/context-propagation/)
+[^sre-slos]: [Google SRE Workbook, "Alerting on SLOs"](https://sre.google/workbook/alerting-on-slos/)

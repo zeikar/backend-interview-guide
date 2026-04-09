@@ -279,7 +279,7 @@ IaC를 쓸 때 자주 헷갈리는 부분입니다.
 
 ## 참고 자료
 
-- Terraform Docs, "Terraform Language" - https://developer.hashicorp.com/terraform/language
-- Terraform Docs, "State" - https://developer.hashicorp.com/terraform/language/state
-- AWS CloudFormation User Guide - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
-- AWS CloudFormation, "What is drift?" - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html
+- [Terraform Docs, "Terraform Language"](https://developer.hashicorp.com/terraform/language)
+- [Terraform Docs, "State"](https://developer.hashicorp.com/terraform/language/state)
+- [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+- [AWS CloudFormation, "What is drift?"](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)

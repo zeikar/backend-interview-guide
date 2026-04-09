@@ -238,9 +238,9 @@ HBase를 설명할 때 중요한 포인트는 다음입니다.
 
 ## 참고 자료
 
-[^hadoop-docs]: Apache Hadoop Docs - https://hadoop.apache.org/docs/current/
-[^hdfs-guide]: Apache Hadoop Docs, "HDFS Users Guide" - https://hadoop.apache.org/docs/current1/hdfs_user_guide.html
-[^hdfs-arch]: Apache Hadoop Docs, "HDFS Architecture Guide" - https://hadoop.apache.org/docs/r2.8.5/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
-[^hbase-guide]: Apache HBase Reference Guide - https://hbase.apache.org/book.html
-[^hive-overview]: Apache Hive - https://hive.apache.org/index.html
-[^hive-intro]: Apache Hive Docs, "Introduction to Apache Hive" - https://hive.apache.org/docs/latest/introduction-to-apache-hive/
+[^hadoop-docs]: [Apache Hadoop Docs](https://hadoop.apache.org/docs/current/)
+[^hdfs-guide]: [Apache Hadoop Docs, "HDFS Users Guide"](https://hadoop.apache.org/docs/current1/hdfs_user_guide.html)
+[^hdfs-arch]: [Apache Hadoop Docs, "HDFS Architecture Guide"](https://hadoop.apache.org/docs/r2.8.5/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html)
+[^hbase-guide]: [Apache HBase Reference Guide](https://hbase.apache.org/book.html)
+[^hive-overview]: [Apache Hive](https://hive.apache.org/index.html)
+[^hive-intro]: [Apache Hive Docs, "Introduction to Apache Hive"](https://hive.apache.org/docs/latest/introduction-to-apache-hive/)

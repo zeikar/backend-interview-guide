@@ -133,7 +133,7 @@ nav_order: 4
 
 ## 참고 자료
 
-[^lambda-pricing]: AWS Lambda Pricing - https://aws.amazon.com/lambda/pricing/
-[^lambda-concurrency]: AWS Lambda Docs, "Understanding Lambda function scaling and concurrency" - https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html
-[^lambda-reserved-concurrency]: AWS Lambda Docs, "Configuring reserved concurrency for a function" - https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html
-[^lambda-best-practices]: AWS Lambda Docs, "Best practices for working with AWS Lambda functions" - https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
+[^lambda-pricing]: [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
+[^lambda-concurrency]: [AWS Lambda Docs, "Understanding Lambda function scaling and concurrency"](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
+[^lambda-reserved-concurrency]: [AWS Lambda Docs, "Configuring reserved concurrency for a function"](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html)
+[^lambda-best-practices]: [AWS Lambda Docs, "Best practices for working with AWS Lambda functions"](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)

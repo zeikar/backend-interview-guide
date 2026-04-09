@@ -240,6 +240,6 @@ nav_order: 2
 
 ## 참고 자료
 
-[^gh-strong-migrations]: GitHub, strong_migrations - https://github.com/ankane/strong_migrations
-[^pg-alter]: PostgreSQL Documentation, ALTER TABLE - https://www.postgresql.org/docs/current/sql-altertable.html
-[^mysql-online-ddl]: MySQL Documentation, Online DDL Operations - https://dev.mysql.com/doc/refman/8.0/en/innodb-online-ddl-operations.html
+[^gh-strong-migrations]: [GitHub, strong_migrations](https://github.com/ankane/strong_migrations)
+[^pg-alter]: [PostgreSQL Documentation, ALTER TABLE](https://www.postgresql.org/docs/current/sql-altertable.html)
+[^mysql-online-ddl]: [MySQL Documentation, Online DDL Operations](https://dev.mysql.com/doc/refman/8.0/en/innodb-online-ddl-operations.html)

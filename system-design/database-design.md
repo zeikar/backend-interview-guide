@@ -224,5 +224,5 @@ RDBMS와 NoSQL의 구현·운영 차이를 더 자세히 보려면 [데이터베
 
 ## 참고 자료
 
-[^dynamodb-consistency]: AWS Docs, "DynamoDB read consistency" - https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html
-[^postgres-replication]: PostgreSQL Docs, "Log-Shipping Standby Servers" - https://www.postgresql.org/docs/current/warm-standby.html
+[^dynamodb-consistency]: [AWS Docs, "DynamoDB read consistency"](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html)
+[^postgres-replication]: [PostgreSQL Docs, "Log-Shipping Standby Servers"](https://www.postgresql.org/docs/current/warm-standby.html)

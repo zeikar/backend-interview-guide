@@ -258,5 +258,5 @@ failover는 장애 시 대체 경로로 넘기는 방식입니다.
 
 ## 참고 자료
 
-[^aws-dr]: AWS Documentation, Disaster Recovery of Workloads on AWS - https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html
-[^gcp-dr]: Google Cloud Documentation, Disaster recovery planning guide - https://cloud.google.com/architecture/disaster-recovery
+[^aws-dr]: [AWS Documentation, Disaster Recovery of Workloads on AWS](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html)
+[^gcp-dr]: [Google Cloud Documentation, Disaster recovery planning guide](https://cloud.google.com/architecture/disaster-recovery)

@@ -148,6 +148,6 @@ func main() {
 
 ## 참고 자료
 
-[^go-home]: The Go Programming Language - https://go.dev/
-[^go-doc]: Go Documentation - https://go.dev/doc
-[^go-spec]: The Go Programming Language Specification - https://go.dev/ref/spec
+[^go-home]: [The Go Programming Language](https://go.dev/)
+[^go-doc]: [Go Documentation](https://go.dev/doc)
+[^go-spec]: [The Go Programming Language Specification](https://go.dev/ref/spec)
