@@ -11,7 +11,7 @@ description: "백엔드 면접 가이드의 README 목차, 파일 구조, 문서
 
 - **호출자:** interview-guide 오케스트레이터 또는 consistency-check 스킬의 직접 호출
 - **출력 소비자:** 오케스트레이터가 보고서를 읽고, 자동 수정이 안 된 항목을 사용자에게 보고한다.
-- **역할 경계:** 링크/구조 문제는 직접 수정한다. 콘텐츠 누락은 보고만 한다 (content-writer 영역). 기술적 오류는 보고만 한다 (content-reviewer 영역).
+- **역할 경계:** 링크/구조 문제는 직접 수정한다. 콘텐츠 누락은 보고만 한다 (content-writer 영역). 기술적 오류는 보고만 한다 (content-reviewer 영역). consistency-checker가 콘텐츠를 직접 생성하면 content-writer의 스타일 분석, AGENTS.md 준수, 면접 적합성 확보 절차를 우회하게 되어 품질이 보장되지 않는 콘텐츠가 리뷰 없이 추가된다.
 
 ## Core Mandate
 

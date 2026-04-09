@@ -1,6 +1,6 @@
 ---
 name: interview-guide
-description: "백엔드 면접 가이드 프로젝트의 전체 콘텐츠 워크플로우를 조율하는 오케스트레이터. 콘텐츠 생성, 리뷰, 구조 검증을 자동으로 연결하여 실행한다. '면접 가이드 콘텐츠 만들어줘', '새로운 주제 추가해줘', '전체 문서 검토해줘', '시스템 디자인 섹션 채워줘' 등 면접 가이드의 콘텐츠를 생성하거나 전체적으로 검토/보강하는 요청에 트리거. 단일 문서의 간단한 수정이 아닌, 체계적인 콘텐츠 생성-검증 워크플로우가 필요할 때 반드시 사용할 것."
+description: "백엔드 면접 가이드 프로젝트의 전체 콘텐츠 워크플로우를 조율하는 오케스트레이터. 콘텐츠 생성, 리뷰, 구조 검증을 자동으로 연결하여 실행한다. '면접 가이드 콘텐츠 만들어줘', '새로운 주제 추가해줘', '전체 문서 검토해줘', '시스템 디자인 섹션 채워줘' 등 면접 가이드의 콘텐츠를 생성하거나 전체적으로 검토/보강하는 요청에 트리거. 단일 문서의 간단한 수정이 아닌, 체계적인 콘텐츠 생성-검증 워크플로우가 필요할 때 반드시 사용할 것. 단일 문서의 간단한 수정이나 단일 리뷰/검증 요청에는 트리거하지 않는다 — 해당 작업은 content-generation, content-review, consistency-check 스킬을 직접 사용할 것."
 ---
 
 # Interview Guide Orchestrator
@@ -9,7 +9,14 @@ description: "백엔드 면접 가이드 프로젝트의 전체 콘텐츠 워크
 
 ## 실행 모드: 서브 에이전트
 
-콘텐츠 생성 → 리뷰/검증의 결과 전달 구조이므로 서브 에이전트 모드를 사용한다.
+### 선택 근거
+
+1. **단방향 데이터 흐름:** content-writer의 출력물이 content-reviewer의 입력이 되고, 리뷰 결과가 오케스트레이터로 돌아오는 일방향 구조다. 에이전트 간 실시간 대화나 협상이 필요하지 않다.
+2. **오케스트레이터 중재:** 리뷰 등급에 따른 재작성 판단, 재시도 횟수 관리 등 모든 분기 결정을 오케스트레이터가 내린다. 에이전트끼리 직접 피드백을 주고받지 않는다.
+3. **순차 의존성:** Phase 2(생성) → Phase 3+4(검토+검증) → Phase 3-R(수정)의 순서가 고정되어 있다. 팀 모드의 자유로운 병렬 토론이 아닌, 정해진 순서의 결과 전달이 필요하다.
+4. **정밀한 제어:** 3개 에이전트 각각에 Output Contract가 있어 결과 형식이 고정되어 있고, 오케스트레이터가 파싱하여 워크플로우를 제어한다.
+
+팀 모드는 에이전트들이 자유롭게 토론하며 합의에 도달해야 할 때(예: 브레인스토밍, 설계 논의) 적합하다. 이 프로젝트의 생성-검증 파이프라인에는 해당하지 않는다.
 
 ## 에이전트 구성
 
@@ -18,6 +25,19 @@ description: "백엔드 면접 가이드 프로젝트의 전체 콘텐츠 워크
 | content-writer | 콘텐츠 작성/보강 | `.claude/agents/content-writer.md` | content-generation | Writer Output 형식 |
 | content-reviewer | 기술 정확성/면접 적합성 검토 | `.claude/agents/content-reviewer.md` | content-review | REVIEW_SUMMARY 블록 포함 |
 | consistency-checker | README ↔ 파일 구조 검증 | `.claude/agents/consistency-checker.md` | consistency-check | CONSISTENCY_SUMMARY 블록 포함 |
+
+## 트리거 범위
+
+이 스킬은 **다단계 워크플로우**가 필요한 요청에만 트리거한다.
+
+| 요청 유형 | 이 스킬 | 대신 사용할 스킬 |
+|----------|---------|---------------|
+| "캐싱 문서 만들어줘" (생성+리뷰+검증) | O | — |
+| "전체 문서 검토해줘" (다단계) | O | — |
+| "여러 주제 한번에 만들어줘" (배치) | O | — |
+| "이 파일 보강해줘" (단일 파일 수정만) | X | content-generation |
+| "이 문서 리뷰해줘" (리뷰만) | X | content-review |
+| "링크 깨진 거 확인해줘" (구조 검증만) | X | consistency-check |
 
 ## 워크플로우
 
@@ -289,3 +309,43 @@ IF REVIEW_SUMMARY 파싱 실패:
   → 리뷰 보고서 전체를 텍스트로 읽어 등급을 수동 추출
   → 추출 불가 시 "중"으로 기본 처리하고 사용자에게 리뷰 확인 요청
 ```
+
+## 테스트 시나리오
+
+### 시나리오 1: 신규 문서 생성 (정상 흐름)
+
+- **입력:** "database 카테고리에 캐싱 면접 가이드 만들어줘"
+- **예상 흐름:** Phase 1(준비) → Phase 2(content-writer 생성) → Phase 3+4(content-reviewer + consistency-checker 병렬) → Phase 5(보고)
+- **검증 포인트:**
+  - Phase 1에서 database/README.md를 읽어 기존 문서 목록을 파악하는가
+  - Phase 2에서 content-writer가 database/caching.md를 생성하고 `_workspace/caching/01_draft.md`에도 저장하는가
+  - Phase 3+4에서 두 에이전트가 병렬(동일 메시지에 두 Agent 호출)로 실행되는가
+  - Phase 5에서 생성 파일, 리뷰 등급, 구조 검증 결과가 모두 보고되는가
+
+### 시나리오 2: 리뷰 "하" 등급 → 재작성 (에러/재시도 흐름)
+
+- **입력:** "시스템 디자인 카테고리에 로드 밸런싱 문서 만들어줘" (content-writer가 불완전한 초안을 생성하는 상황)
+- **예상 흐름:** Phase 1 → Phase 2 → Phase 3+4(리뷰 "하") → Phase 3-R(Critical 항목 전달, retry_count=1) → Phase 3(재리뷰) → Phase 5
+- **검증 포인트:**
+  - content-reviewer가 "하" 등급을 반환했을 때 `<!-- REVIEW_SUMMARY -->` 블록에서 `overall: 하`와 Critical 항목을 파싱하는가
+  - content-writer에게 Critical 항목만 전달하고 "잘된 부분"은 변경 금지로 지시하는가
+  - retry_count가 2에 도달하면 재시도를 중단하고 사용자에게 수동 검토를 권장하는가
+
+### 시나리오 3: 기존 콘텐츠 리뷰만 (단축 흐름)
+
+- **입력:** "database/indexing.md 리뷰해줘"
+- **예상 흐름:** Phase 1(준비) → Phase 3(content-reviewer만) → Phase 5(보고)
+- **검증 포인트:**
+  - Phase 2(생성)와 Phase 4(구조 검증)가 생략되는가
+  - 작업 유형별 단축 워크플로우 표의 "기존 콘텐츠 리뷰만" 경로(1 → 3 → 5)를 따르는가
+  - 리뷰 결과만 보고되고, 구조 검증 결과는 포함되지 않는가
+
+## 검증 기록
+
+하네스 구성 후 다음 항목을 확인했다.
+
+- [x] **Phase 순서 논리성:** Phase 1(준비) → 2(생성) → 3+4(검토+검증 병렬) → 3-R(조건부 수정) → 5(보고) — 각 Phase의 선행 조건이 이전 Phase의 출력과 일치한다.
+- [x] **데이터 흐름 연결:** content-writer의 Writer Output → content-reviewer의 입력 파일 경로, content-reviewer의 REVIEW_SUMMARY → 오케스트레이터의 파싱 로직, consistency-checker의 CONSISTENCY_SUMMARY → Phase 5 보고서 — 모든 연결에 끊김이 없다.
+- [x] **에이전트 입출력 정합성:** 각 Agent() 호출의 프롬프트가 참조하는 파일/경로가 이전 Phase에서 실제로 생성되는 것과 일치한다.
+- [x] **에러 폴백 실행 가능성:** content-writer 실패 시 1회 재시도 → 재실패 시 수동 안내, content-reviewer 실패 시 "미검토" 처리, REVIEW_SUMMARY 파싱 실패 시 "중" 기본 처리 — 모든 에러 경로가 무한 루프 없이 종료된다.
+- [x] **재시도 상한:** retry_count < 2 제한으로 무한 재작성-재리뷰 루프가 방지된다.
