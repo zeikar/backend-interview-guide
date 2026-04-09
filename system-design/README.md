@@ -33,3 +33,5 @@ permalink: /system-design/
 - [메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)](event-driven-architecture.md)
 - [보안 설계 (Security Design)](security-design.md)
 - [모니터링 및 로깅 (Monitoring & Logging)](monitoring-and-logging.md)
+- [뉴스 피드 시스템 설계 (News Feed System Design)](news-feed-system-design.md)
+- [검색 시스템 설계 (Search System Design)](search-system-design.md)
