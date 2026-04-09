@@ -16,7 +16,11 @@ permalink: /system-design/
 ## 목차
 
 - [시스템 디자인 기초 (System Design Basics)](system-design-basics.md)
-- [실전 화이트보드 면접 예시 (Whiteboard Interview Example)](whiteboard-interview-example.md)
+- 실전 문제
+  - [실전 화이트보드 면접 가이드 (Whiteboard Interview Guide)](whiteboard-interview-guide.md)
+  - [URL 단축기 시스템 설계 예시 (URL Shortener System Design Example)](url-shortener-system-design-example.md)
+  - [뉴스 피드 시스템 설계 예시 (News Feed System Design Example)](news-feed-system-design.md)
+  - [검색 시스템 설계 예시 (Search System Design Example)](search-system-design.md)
 - [확장성 (Scalability)](scalability.md)
 - [캐싱 전략 (Caching Strategy)](caching-strategy.md)
 - [로드 밸런싱 (Load Balancing)](load-balancing.md)
@@ -33,5 +37,3 @@ permalink: /system-design/
 - [메시징 및 이벤트 기반 아키텍처 (Event-Driven Architecture)](event-driven-architecture.md)
 - [보안 설계 (Security Design)](security-design.md)
 - [모니터링 및 로깅 (Monitoring & Logging)](monitoring-and-logging.md)
-- [뉴스 피드 시스템 설계 (News Feed System Design)](news-feed-system-design.md)
-- [검색 시스템 설계 (Search System Design)](search-system-design.md)

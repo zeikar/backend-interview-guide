@@ -1,11 +1,11 @@
 ---
-title: 검색 시스템 설계 (Search System Design)
-description: 검색 시스템 설계에서 색인 파이프라인, inverted index, shard와 replica, 최신성과 tail latency를 면접에서 어떻게 설명할지 다룹니다.
+title: 검색 시스템 설계 예시 (Search System Design Example)
+description: 검색 문제를 기준으로 색인 파이프라인, inverted index, shard와 replica, 최신성을 어떻게 설명할지 다룹니다.
 parent: 시스템 디자인
-nav_order: 20
+nav_order: 21
 ---
 
-# 검색 시스템 설계 (Search System Design)
+# 검색 시스템 설계 예시 (Search System Design Example)
 
 ## 목차
 
@@ -26,7 +26,7 @@ nav_order: 20
 
 ## 이 문서를 왜 보나
 
-**검색 시스템(Search System)** 문제는 단순한 DB 조회와 다릅니다.
+**검색 시스템(Search System)** 은 시스템 디자인 면접에서 자주 나오는 대표 문제입니다.
 
 검색 시스템은 보통 다음을 동시에 묻습니다.
 
@@ -34,6 +34,8 @@ nav_order: 20
 - **정확도와 지연 시간 사이의 균형을 설명할 수 있는가**
 - **색인 최신성과 운영 비용을 함께 볼 수 있는가**
 - **분산 검색에서 shard와 replica의 의미를 알고 있는가**
+
+이 문서는 검색 문제를 기준으로 요구사항, 색인 경로, 조회 경로, shard/replica, 최신성과 지연 시간의 균형을 어떻게 설명할지 정리합니다.
 
 즉, 검색 문제는 "LIKE 검색을 빠르게 하자"가 아니라  
 **분석, 색인, 서빙, 랭킹을 분리한 별도 시스템을 언제 왜 두는가**를 보는 질문입니다.

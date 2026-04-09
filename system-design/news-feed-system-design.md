@@ -1,11 +1,11 @@
 ---
-title: 뉴스 피드 시스템 설계 (News Feed System Design)
-description: 뉴스 피드 설계에서 fan-out, 타임라인 저장, 캐시, celebrity 문제를 면접에서 어떻게 설명할지 다룹니다.
+title: 뉴스 피드 시스템 설계 예시 (News Feed System Design Example)
+description: 뉴스 피드 문제를 기준으로 fan-out, 타임라인 저장, 캐시, celebrity 대응을 어떻게 설명할지 다룹니다.
 parent: 시스템 디자인
-nav_order: 19
+nav_order: 20
 ---
 
-# 뉴스 피드 시스템 설계 (News Feed System Design)
+# 뉴스 피드 시스템 설계 예시 (News Feed System Design Example)
 
 ## 목차
 
@@ -26,7 +26,7 @@ nav_order: 19
 
 ## 이 문서를 왜 보나
 
-**뉴스 피드 시스템(News Feed System)** 은 시스템 디자인 면접에서 자주 쓰이는 대표 문제입니다.
+**뉴스 피드 시스템(News Feed System)** 은 시스템 디자인 면접에서 자주 나오는 대표 문제입니다.
 
 이 문제는 단순히 게시글을 저장하는 문제가 아니라 다음을 한 번에 보게 만듭니다.
 
@@ -35,6 +35,8 @@ nav_order: 19
 - **비동기 처리:** 쓰기 시점과 읽기 시점의 경계를 나눠야 합니다.
 - **확장성:** follower 수가 큰 사용자 때문에 hot key가 쉽게 생깁니다.
 - **운영성:** 캐시, 재계산, 지연 허용 범위를 같이 설명해야 합니다.
+
+이 문서는 뉴스 피드 문제를 기준으로 요구사항, 규모 추정, fan-out 전략, celebrity 대응, 운영 포인트를 어떻게 설명할지 정리합니다.
 
 즉, 이 문제는 "타임라인을 어떻게 저장할까"보다  
 **읽기 지연, 쓰기 비용, 정합성, 운영 복잡도 사이의 균형을 어떻게 잡을까**를 보는 문제에 가깝습니다.
