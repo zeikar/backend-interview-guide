@@ -1,7 +1,7 @@
 title: 백엔드 개발자 면접 가이드
 description: 데이터베이스, 클라우드, 시스템 디자인, 프로그래밍을 중심으로 백엔드 면접에서 자주 나오는 주제를 정리한 한국어 가이드입니다.
 remote_theme: just-the-docs/just-the-docs@v0.10.1
-url: https://zeikar.github.io
+url: https://zeikar.dev
 baseurl: /backend-interview-guide
 lang: ko
 permalink: pretty
